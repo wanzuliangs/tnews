@@ -1,7 +1,7 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html";i:1543387276;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\edit.html";i:1543396030;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
 <!DOCTYPE html>
 <html><head>
-        <meta charset="utf-8">
+	    <meta charset="utf-8">
     <title>newscms</title>
 
     <meta name="description" content="Dashboard">
@@ -21,7 +21,7 @@
     
 </head>
 <body>
-    <!-- 头部 -->
+	<!-- 头部 -->
     <div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
@@ -81,11 +81,10 @@
 </div>
 
     <!-- /头部 -->
-    
-    <div class="main-container container-fluid">
-        <div class="page-container">
-                        <!-- Page Sidebar -->
-            
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
     <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
@@ -185,7 +184,7 @@
                                         <li>
                         <a href="#">网站配置</a>
                     </li>
-                                        <li class="active">配置管理</li>
+                                        <li class="active">修改配置</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -193,52 +192,78 @@
                 <!-- Page Body -->
                 <div class="page-body">
                     
-<button type="button" tooltip="添加配置" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url("add"); ?>'"> <i class="fa fa-plus"></i> Add
-</button>
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
         <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">修改配置</span>
+            </div>
             <div class="widget-body">
-                <div class="flip-scroll">
-                    <table class="table table-bordered table-hover">
-                        <thead class="">
-                            <tr>
-                                <th class="text-center">ID</th>
-                                <th class="text-center">中文名</th>
-                                <th class="text-center">英文名</th>
-                                <th class="text-center">值/默认值</th>
-                                <th class="text-center">可选值</th>
-                                <th class="text-center">操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           <?php if(is_array($confList) || $confList instanceof \think\Collection || $confList instanceof \think\Paginator): $i = 0; $__LIST__ = $confList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?> 
-                            <tr>
-                                <td align="center"><?php echo $vo['id']; ?></td>
-                                <td align="center"><?php echo $vo['cname']; ?></td>
-                                <td align="center"><?php echo $vo['ename']; ?></td>
-                                <td align="center"><?php if($vo['value'] != ''): ?><?php echo $vo['value']; else: ?>未定义<?php endif; ?></td>
-                                <td align="center"><?php if($vo['values'] != ''): ?><?php echo $vo['values']; else: ?>未定义<?php endif; ?></td>
-                                <td align="center">
-                                    <a href="<?php echo url('edit',array('id'=>$vo['id'])); ?>" class="btn btn-primary btn-sm shiny"> <i class="fa fa-edit"></i>
-                                        编辑
-                                    </a>
-                                    <a href="#" onClick="warning('确实要删除吗', '<?php echo url('delete',array('id'=>$vo['id'])); ?>')" class="btn btn-danger btn-sm shiny"> <i class="fa fa-trash-o"></i>
-                                        删除
-                                    </a>
-                                </td>
-                            </tr>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                    <div class="row" style="padding-top:10px;">
-                        <div class="col-md-2 col-md-offset-10">
-                        <?php echo $confList->render(); ?>
-                        </div> 
-                    </div>
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post">
+                        <input type="hidden" name="id" value="<?php echo !empty($confInfo['id'])?$confInfo['id']:''; ?>">
+                        <div class="form-group">
+                            <label for="cname" class="col-sm-2 control-label no-padding-right">中文名</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="cname" placeholder="" name="cname" required="" type="text" value="<?php echo !empty($confInfo['cname'])?$confInfo['cname']:''; ?>">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ename" class="col-sm-2 control-label no-padding-right">英文名</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="ename" placeholder="" name="ename" required="" type="text" value="<?php echo !empty($confInfo['ename'])?$confInfo['ename']:''; ?>">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dt_type" class="col-sm-2 control-label no-padding-right">配置类型</label>
+                            <div class="col-sm-6">
+                                <select name="dt_type" style="width: 100%;">
+                                    <option value="1" <?php if($confInfo['dt_type'] == 1): ?>selected="selected"<?php endif; ?>>单行文本框</option>
+                                    <option value="2" <?php if($confInfo['dt_type'] == 2): ?>selected="selected"<?php endif; ?>>单选框</option>
+                                    <option value="3" <?php if($confInfo['dt_type'] == 3): ?>selected="selected"<?php endif; ?>>复选框</option>
+                                    <option value="4" <?php if($confInfo['dt_type'] == 4): ?>selected="selected"<?php endif; ?>>下拉框</option>
+                                    <option value="5" <?php if($confInfo['dt_type'] == 5): ?>selected="selected"<?php endif; ?>>文本域</option>
+                                    <option value="6" <?php if($confInfo['dt_type'] == 6): ?>selected="selected"<?php endif; ?>>附件</option>
+                                </select>
+                            </div>
+                        </div>  
+
+                        <div class="form-group">
+                            <label for="cf_type" class="col-sm-2 control-label no-padding-right">配置分类</label>
+                            <div class="col-sm-6">
+                                <select name="cf_type" style="width: 100%;">
+                                    <option value="1" <?php if($confInfo['cf_type'] == 1): ?>selected="selected"<?php endif; ?>>站点基本信息</option>
+                                    <option value="2" <?php if($confInfo['cf_type'] == 2): ?>selected="selected"<?php endif; ?>>联系方式</option>
+                                    <option value="3" <?php if($confInfo['cf_type'] == 3): ?>selected="selected"<?php endif; ?>>SEO设置</option>
+                                </select>
+                            </div>
+                        </div>  
+
+                        <div class="form-group">
+                            <label for="value" class="col-sm-2 control-label no-padding-right">值/默认值</label>
+                            <div class="col-sm-6">
+                                <textarea class="form-control" name="value" id="value" cols="30" rows="4"><?php echo !empty($confInfo['value'])?$confInfo['value']:''; ?></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="values" class="col-sm-2 control-label no-padding-right">可选值</label>
+                            <div class="col-sm-6">
+                                <textarea class="form-control" name="values" id="values" cols="30" rows="4"><?php echo !empty($confInfo['values'])?$confInfo['values']:''; ?></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">保存信息</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                                    </div>
             </div>
         </div>
     </div>
@@ -248,10 +273,10 @@
                 <!-- /Page Body -->
             </div>
             <!-- /Page Content -->
-        </div>  
-    </div>
+		</div>	
+	</div>
 
-        <!--Basic Scripts-->
+	    <!--Basic Scripts-->
     <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
     <script src="/tnews/public/static/admin/style/bootstrap.js"></script>
     <script src="/tnews/public/static/admin/style/jquery.js"></script>
