@@ -1,9 +1,9 @@
 <?php
 namespace app\admin\controller;
-
-class Config
+use think\Controller;
+class Config extends Controller
 {
-    public function index()
+    public function lst()
     {
         return view();
     }
@@ -15,6 +15,15 @@ class Config
 
     public function add()
     {
+        if (request()->isPost()) {
+            $data = input('post.');
+            $res = db('conf')->insert($data);
+            if ($res) {
+                $this->success('添加配置项成功!',url('lst'));
+            } else {
+                $this->error('添加配置失败!');
+            }
+        }
         return view();
     }
 

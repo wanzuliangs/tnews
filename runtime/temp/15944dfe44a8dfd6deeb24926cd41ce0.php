@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:99:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html";i:1543376133;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html";i:1543384547;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -84,6 +84,8 @@
     
     <div class="main-container container-fluid">
         <div class="page-container">
+                        <!-- Page Sidebar -->
+            
     <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
@@ -174,77 +176,64 @@
                 </ul>
                 <!-- /Sidebar Menu -->
             </div>
+            <!-- /Page Sidebar -->
             <!-- Page Content -->
             <div class="page-content">
                 <!-- Page Breadcrumb -->
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
-                      
-                        <li>
-                            <a href="#">网站配置</a>
-                        </li>
-                        <li class="active">配置列表</li>
-                    </ul>
+                                        <li>
+                        <a href="#">网站配置</a>
+                    </li>
+                                        <li class="active">配置管理</li>
+                                        </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
 
                 <!-- Page Body -->
                 <div class="page-body">
                     
+<button type="button" tooltip="添加配置" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url("add"); ?>'"> <i class="fa fa-plus"></i> Add
+</button>
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
-        <div class="widget-body">
-            <div class="widget-main ">
-                <div class="tabbable">
-                    <ul class="nav nav-tabs  tabs-flat">
-                        <li class="active ">
-                            <a data-toggle="tab" href="#FlatTab-1">基本设置</a>
-                        </li>
-                        <li class="">
-                            <a data-toggle="tab" href="#FlatTab-2">联系方式</a>
-                        </li>
-                        <li class="">
-                            <a data-toggle="tab" href="#FlatTab-3">SEO设置</a>
-                        </li>
-                    </ul>
-<form class="form-horizontal" role="form" action="" method="post">
-                    <div class="tab-content  tabs-flat">
-                        <div class="active tab-pane" id="FlatTab-1">
-                            <div class="form-group">
-                                <label for="username" class="col-sm-2 control-label no-padding-right">用户名</label>
-                                <div class="col-sm-6">
-                                    <input class="form-control" id="username" placeholder="" name="username" required="" type="text"></div>
-                                <p class="help-block col-sm-4 red">* 必填</p>
-                            </div>
+        <div class="widget">
+            <div class="widget-body">
+                <div class="flip-scroll">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">中文名</th>
+                                <th class="text-center">英文名</th>
+                                <th class="text-center">值/默认值</th>
+                                <th class="text-center">可选值</th>
+                                <th class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td align="center">6</td>
+                                <td align="center">test</td>
+                                <td align="center">test</td>
+                                <td align="center">test</td>
+                                <td align="center">test</td>
+                                <td align="center">
+                                    <a href="/admin/user/edit/id/6.html" class="btn btn-primary btn-sm shiny"> <i class="fa fa-edit"></i>
+                                        编辑
+                                    </a>
+                                    <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/6.html')" class="btn btn-danger btn-sm shiny"> <i class="fa fa-trash-o"></i>
+                                        删除
+                                    </a>
+                                </td>
+                            </tr>
 
-                            <div class="form-group">
-                                <label for="group_id" class="col-sm-2 control-label no-padding-right">用户角色</label>
-                                <div class="col-sm-6">
-                                    <select name="group_id" style="width: 100%;">
-                                        <option selected="selected" value="8">测试</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="FlatTab-2">
-                            <p>
-                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
-                            </p>
-                        </div>
-                        <div class="tab-pane" id="FlatTab-3">
-                            <p>
-                                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.
-                            </p>
-                        </div>
-                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">保存信息</button>
-                            </div>
-                        </div>
-                    </div>
-</form>
-
+                        </tbody>
+                    </table>
                 </div>
+                <div>
+                                    </div>
             </div>
         </div>
     </div>
