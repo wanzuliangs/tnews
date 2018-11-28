@@ -10,7 +10,7 @@ class Config extends Controller
         return view();
     }
 
-     public function configlst()
+    public function configlst()
     {
         return view();
     }
@@ -19,6 +19,8 @@ class Config extends Controller
     {
         if (request()->isPost()) {
             $data = input('post.');
+            $validate = validate('Conf');
+            
             $res = db('conf')->insert($data);
             if ($res) {
                 $this->success('添加配置项成功!',url('lst'));
