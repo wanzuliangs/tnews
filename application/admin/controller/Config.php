@@ -12,6 +12,8 @@ class Config extends Controller
 
     public function configlst()
     {
+        $confList = db('conf')->select();
+        $this->assign('confList',$confList);
         return view();
     }
 
@@ -20,7 +22,9 @@ class Config extends Controller
         if (request()->isPost()) {
             $data = input('post.');
             $validate = validate('Conf');
-            
+            if (!$validate->check($data)) {
+                $this->error($validate->getError());
+            }
             $res = db('conf')->insert($data);
             if ($res) {
                 $this->success('添加配置项成功!',url('lst'));
@@ -35,6 +39,10 @@ class Config extends Controller
     {
         if (request()->isPost()) {
             $data = input('post.');
+            $validate = validate('Conf');
+            if (!$validate->scene('edit')->check($data)) {
+                $this->error($validate->getError());
+            }
             $res = db('conf')->update($data);
             if ($res!==false) {
                 $this->success('修改配置成功!',url('lst'));

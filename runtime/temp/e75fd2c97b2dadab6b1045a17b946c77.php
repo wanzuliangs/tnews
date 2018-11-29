@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\index\index.html";i:1543369987;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543370617;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\index\index.html";i:1543369987;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
 <!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
@@ -108,7 +108,7 @@
                                 </a>
                             </li>
                              <li>
-                                <a href="/admin/document/index.html">
+                                <a href="<?php echo url('config/lst'); ?>">
                                     <span class="menu-text">
                                         配置管理                                    </span>
                                     <i class="menu-expand"></i>

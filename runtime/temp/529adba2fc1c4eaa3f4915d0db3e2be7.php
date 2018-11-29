@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:99:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html";i:1543387268;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:99:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html";i:1543483272;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -210,31 +210,169 @@
 <form class="form-horizontal" role="form" action="" method="post">
                     <div class="tab-content  tabs-flat">
                         <div class="active tab-pane" id="FlatTab-1">
+
+                            <?php foreach ($confList as $conf): if ($conf['cf_type'] == 1): ?>
                             <div class="form-group">
-                                <label for="username" class="col-sm-2 control-label no-padding-right">用户名</label>
+                                <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $conf['cname'] ?></label>
                                 <div class="col-sm-6">
-                                    <input class="form-control" id="username" placeholder="" name="username" required="" type="text"></div>
+                                    <?php if ($conf['dt_type'] == 1): ?>
+                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>" required="" type="text">
+                                    <?php elseif ($conf['dt_type'] == 2): ?>
+                                        <div class="row">
+                                            <div class="radio col-md-2">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
+                                                    <span class="text">开启</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio col-md-2" style="margin-left:-20px;">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
+                                                    <span class="text">关闭</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php elseif ($conf['dt_type'] == 3): ?>
+                                        <div class="row">
+                                            <div class="checkbox col-md-2">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
+                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
+                                                    <span class="text">Blue</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox col-md-2" style="margin-left:-20px;">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
+                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
+                                                    <span class="text">Blue</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php elseif ($conf['dt_type'] == 4): ?>
+                                        <select  name="<?php echo $conf['ename'] ?>">
+                                            <option value=""></option>
+                                        </select>
+                                    <?php elseif ($conf['dt_type'] == 5): ?>
+                                        <textarea name=""  class="form-control"></textarea>
+                                    <?php elseif ($conf['dt_type'] == 6): ?>
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
+                                    <?php endif; ?>
+
+                                </div>
                                 <p class="help-block col-sm-4 red">* 必填</p>
                             </div>
+                            <?php endif; endforeach; ?>
 
-                            <div class="form-group">
-                                <label for="group_id" class="col-sm-2 control-label no-padding-right">用户角色</label>
-                                <div class="col-sm-6">
-                                    <select name="group_id" style="width: 100%;">
-                                        <option selected="selected" value="8">测试</option>
-                                    </select>
-                                </div>
-                            </div>
+                        
                         </div>
                         <div class="tab-pane" id="FlatTab-2">
-                            <p>
-                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
-                            </p>
+                             <?php foreach ($confList as $conf): if ($conf['cf_type'] == 2): ?>
+                            <div class="form-group">
+                                <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $conf['cname'] ?></label>
+                                <div class="col-sm-6">
+                                    <?php if ($conf['dt_type'] == 1): ?>
+                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>" required="" type="text">
+                                    <?php elseif ($conf['dt_type'] == 2): ?>
+                                        <div class="row">
+                                            <div class="radio col-md-2">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
+                                                    <span class="text">开启</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio col-md-2" style="margin-left:-20px;">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
+                                                    <span class="text">关闭</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php elseif ($conf['dt_type'] == 3): ?>
+                                        <div class="row">
+                                            <div class="checkbox col-md-2">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
+                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
+                                                    <span class="text">Blue</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox col-md-2" style="margin-left:-20px;">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
+                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
+                                                    <span class="text">Blue</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php elseif ($conf['dt_type'] == 4): ?>
+                                        <select  name="<?php echo $conf['ename'] ?>">
+                                            <option value=""></option>
+                                        </select>
+                                    <?php elseif ($conf['dt_type'] == 5): ?>
+                                        <textarea name=""  class="form-control"></textarea>
+                                    <?php elseif ($conf['dt_type'] == 6): ?>
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
+                                    <?php endif; ?>
+
+                                </div>
+                                <p class="help-block col-sm-4 red">* 必填</p>
+                            </div>
+                            <?php endif; endforeach; ?>
                         </div>
                         <div class="tab-pane" id="FlatTab-3">
-                            <p>
-                                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.
-                            </p>
+                             <?php foreach ($confList as $conf): if ($conf['cf_type'] == 3): ?>
+                            <div class="form-group">
+                                <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $conf['cname'] ?></label>
+                                <div class="col-sm-6">
+                                    <?php if ($conf['dt_type'] == 1): ?>
+                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>" required="" type="text">
+                                    <?php elseif ($conf['dt_type'] == 2): ?>
+                                        <div class="row">
+                                            <div class="radio col-md-2">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
+                                                    <span class="text">开启</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio col-md-2" style="margin-left:-20px;">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
+                                                    <span class="text">关闭</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php elseif ($conf['dt_type'] == 3): ?>
+                                        <div class="row">
+                                            <div class="checkbox col-md-2">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
+                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
+                                                    <span class="text">Blue</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox col-md-2" style="margin-left:-20px;">
+                                                <label>
+                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
+                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
+                                                    <span class="text">Blue</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php elseif ($conf['dt_type'] == 4): ?>
+                                        <select  name="<?php echo $conf['ename'] ?>">
+                                            <option value=""></option>
+                                        </select>
+                                    <?php elseif ($conf['dt_type'] == 5): ?>
+                                        <textarea name=""  class="form-control"></textarea>
+                                    <?php elseif ($conf['dt_type'] == 6): ?>
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
+                                    <?php endif; ?>
+
+                                </div>
+                                <p class="help-block col-sm-4 red">* 必填</p>
+                            </div>
+                            <?php endif; endforeach; ?>
                         </div>
                          <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">

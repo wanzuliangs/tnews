@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\edit.html";i:1543396030;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\edit.html";i:1543457167;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
 <!DOCTYPE html>
 <html><head>
 	    <meta charset="utf-8">
@@ -205,7 +205,7 @@
                         <div class="form-group">
                             <label for="cname" class="col-sm-2 control-label no-padding-right">中文名</label>
                             <div class="col-sm-6">
-                                <input class="form-control" id="cname" placeholder="" name="cname" required="" type="text" value="<?php echo !empty($confInfo['cname'])?$confInfo['cname']:''; ?>">
+                                <input class="form-control" id="cname" placeholder="" name="cname"  type="text" value="<?php echo !empty($confInfo['cname'])?$confInfo['cname']:''; ?>">
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
@@ -213,7 +213,7 @@
                         <div class="form-group">
                             <label for="ename" class="col-sm-2 control-label no-padding-right">英文名</label>
                             <div class="col-sm-6">
-                                <input class="form-control" id="ename" placeholder="" name="ename" required="" type="text" value="<?php echo !empty($confInfo['ename'])?$confInfo['ename']:''; ?>">
+                                <input class="form-control" id="ename" placeholder="" name="ename"  type="text" value="<?php echo !empty($confInfo['ename'])?$confInfo['ename']:''; ?>">
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
