@@ -15,6 +15,8 @@ class Config extends Controller
         if (request()->isPost()) {
             $data = input('post.');
             $enameArr = db('conf')->column('ename');
+            // 找出上传表单控件名
+            $imgcolumn = db('conf')->where('dt_type',6)->column('ename');
             foreach ($data as $k => $v) {
                 if (is_array($v)) {
                     $v = implode(',',$v);
@@ -22,10 +24,21 @@ class Config extends Controller
                 db('conf')->where('ename',$k)->update(['value' => $v]);
             }  
             foreach ($enameArr as $k => $v) {
-                if (!in_array($v,array_keys($data))) {
+                if (!in_array($v,array_keys($data)) && !in_array($v,$imgcolumn)) {
                     db('conf')->where('ename',$v)->update(['value' => '']);
                 }
             } 
+            // 上传
+            foreach ($imgcolumn as $k => $v) {
+                $file = request()->file($v);
+                if ($_FILES[$v]['tmp_name']) {
+                     $info = $file->move(ROOT_PATH . 'public/static/admin/uploads');
+                     $imgpath = $info->getSaveName();
+                     if ($imgpath != '') {
+                         db('conf')->where('ename',$v)->update(['value'=>$imgpath]);
+                     }
+                }
+            }
             $this->success('配置修改成功!');
         }
         $confList = db('conf')->select();
