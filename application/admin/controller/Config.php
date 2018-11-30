@@ -12,6 +12,22 @@ class Config extends Controller
 
     public function configlst()
     {
+        if (request()->isPost()) {
+            $data = input('post.');
+            $enameArr = db('conf')->column('ename');
+            foreach ($data as $k => $v) {
+                if (is_array($v)) {
+                    $v = implode(',',$v);
+                }
+                db('conf')->where('ename',$k)->update(['value' => $v]);
+            }  
+            foreach ($enameArr as $k => $v) {
+                if (!in_array($v,array_keys($data))) {
+                    db('conf')->where('ename',$v)->update(['value' => '']);
+                }
+            } 
+            $this->success('配置修改成功!');
+        }
         $confList = db('conf')->select();
         $this->assign('confList',$confList);
         return view();

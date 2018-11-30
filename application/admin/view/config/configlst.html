@@ -68,45 +68,48 @@
                                 <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $conf['cname'] ?></label>
                                 <div class="col-sm-6">
                                     <?php if ($conf['dt_type'] == 1): ?>
-                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>" required="" type="text">
+                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>"  type="text" value="{$conf['value']?$conf['value']:''}">
                                     <?php elseif ($conf['dt_type'] == 2): ?>
                                         <div class="row">
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                foreach($valuesArr as $v):
+                                             ?>
                                             <div class="radio col-md-2">
                                                 <label>
-                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
-                                                    <span class="text">开启</span>
+                                                    <input {if condition="$v eq $conf['value']"}checked{/if} class="colored-blue" name="{$conf['ename']}" type="radio" value="<?php echo $v ?>">                                        
+                                                    <span class="text"><?php echo $v ?></span>
                                                 </label>
                                             </div>
-                                            <div class="radio col-md-2" style="margin-left:-20px;">
-                                                <label>
-                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
-                                                    <span class="text">关闭</span>
-                                                </label>
-                                            </div>
+                                           <?php endforeach; ?>
                                         </div>
                                     <?php elseif ($conf['dt_type'] == 3): ?>
                                         <div class="row">
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                $valueArr = explode(',',$conf['value']);
+                                                foreach($valuesArr as $v):
+                                             ?>
                                             <div class="checkbox col-md-2">
                                                 <label>
-                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
-                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
-                                                    <span class="text">Blue</span>
+                                                    <input <?php if(in_array($v,  $valueArr)){echo 'checked';}?> class="colored-blue" id="form-field-checkbox" name="<?php echo $conf['ename']; ?>[]" type="checkbox" value="<?php echo $v; ?>">                                        
+                                                                                           
+                                                    <span class="text"><?php echo $v ?></span>
                                                 </label>
                                             </div>
-                                            <div class="checkbox col-md-2" style="margin-left:-20px;">
-                                                <label>
-                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
-                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
-                                                    <span class="text">Blue</span>
-                                                </label>
-                                            </div>
+                                           <?php endforeach; ?>
                                         </div>
                                     <?php elseif ($conf['dt_type'] == 4): ?>
                                         <select  name="<?php echo $conf['ename'] ?>">
-                                            <option value=""></option>
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                foreach($valuesArr as $v):
+                                             ?>
+                                            <option <?php if ($v == $conf['value']) { echo "selected"; } ?> value="<?php echo $v ?>"><?php echo $v ?></option>
+                                        <?php endforeach; ?>
                                         </select>
                                     <?php elseif ($conf['dt_type'] == 5): ?>
-                                        <textarea name=""  class="form-control"></textarea>
+                                        <textarea name="<?php echo $conf['ename'] ?>"  class="form-control">{$conf['value']?$conf['value']:''}</textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
                                         <input  type="file" name="<?php echo $conf['ename'] ?>">
                                     <?php endif; ?>
@@ -126,45 +129,48 @@
                                 <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $conf['cname'] ?></label>
                                 <div class="col-sm-6">
                                     <?php if ($conf['dt_type'] == 1): ?>
-                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>" required="" type="text">
+                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>"  type="text" value="{$conf['value']?$conf['value']:''}">
                                     <?php elseif ($conf['dt_type'] == 2): ?>
                                         <div class="row">
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                foreach($valuesArr as $v):
+                                             ?>
                                             <div class="radio col-md-2">
                                                 <label>
-                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
-                                                    <span class="text">开启</span>
+                                                    <input {if condition="$v eq $conf['value']"}checked{/if} class="colored-blue" name="{$conf['ename']}" type="radio" value="<?php echo $v ?>">                                        
+                                                    <span class="text"><?php echo $v ?></span>
                                                 </label>
                                             </div>
-                                            <div class="radio col-md-2" style="margin-left:-20px;">
-                                                <label>
-                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
-                                                    <span class="text">关闭</span>
-                                                </label>
-                                            </div>
+                                           <?php endforeach; ?>
                                         </div>
                                     <?php elseif ($conf['dt_type'] == 3): ?>
                                         <div class="row">
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                $valueArr = explode(',',$conf['value']);
+                                                foreach($valuesArr as $v):
+                                             ?>
                                             <div class="checkbox col-md-2">
                                                 <label>
-                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
-                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
-                                                    <span class="text">Blue</span>
+                                                    <input <?php if(in_array($v,  $valueArr)){echo 'checked';}?> class="colored-blue" id="form-field-checkbox" name="<?php echo $conf['ename']; ?>[]" type="checkbox" value="<?php echo $v; ?>">                                        
+                                                                                           
+                                                    <span class="text"><?php echo $v ?></span>
                                                 </label>
                                             </div>
-                                            <div class="checkbox col-md-2" style="margin-left:-20px;">
-                                                <label>
-                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
-                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
-                                                    <span class="text">Blue</span>
-                                                </label>
-                                            </div>
+                                           <?php endforeach; ?>
                                         </div>
                                     <?php elseif ($conf['dt_type'] == 4): ?>
                                         <select  name="<?php echo $conf['ename'] ?>">
-                                            <option value=""></option>
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                foreach($valuesArr as $v):
+                                             ?>
+                                            <option <?php if ($v == $conf['value']) { echo "selected"; } ?> value="<?php echo $v ?>"><?php echo $v ?></option>
+                                        <?php endforeach; ?>
                                         </select>
                                     <?php elseif ($conf['dt_type'] == 5): ?>
-                                        <textarea name=""  class="form-control"></textarea>
+                                        <textarea name="<?php echo $conf['ename'] ?>"  class="form-control">{$conf['value']?$conf['value']:''}</textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
                                         <input  type="file" name="<?php echo $conf['ename'] ?>">
                                     <?php endif; ?>
@@ -174,6 +180,7 @@
                             </div>
                             <?php endif; ?>
                             <?php endforeach; ?>
+                            
                         </div>
                         <div class="tab-pane" id="FlatTab-3">
                              <?php foreach ($confList as $conf): ?>
@@ -182,45 +189,48 @@
                                 <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $conf['cname'] ?></label>
                                 <div class="col-sm-6">
                                     <?php if ($conf['dt_type'] == 1): ?>
-                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>" required="" type="text">
+                                        <input class="form-control" placeholder="" name="<?php echo $conf['ename'] ?>"  type="text" value="{$conf['value']?$conf['value']:''}">
                                     <?php elseif ($conf['dt_type'] == 2): ?>
                                         <div class="row">
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                foreach($valuesArr as $v):
+                                             ?>
                                             <div class="radio col-md-2">
                                                 <label>
-                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
-                                                    <span class="text">开启</span>
+                                                    <input {if condition="$v eq $conf['value']"}checked{/if} class="colored-blue" name="{$conf['ename']}" type="radio" value="<?php echo $v ?>">                                        
+                                                    <span class="text"><?php echo $v ?></span>
                                                 </label>
                                             </div>
-                                            <div class="radio col-md-2" style="margin-left:-20px;">
-                                                <label>
-                                                    <input checked="checked" class="colored-blue" name="form-field-radio" type="radio">                                        
-                                                    <span class="text">关闭</span>
-                                                </label>
-                                            </div>
+                                           <?php endforeach; ?>
                                         </div>
                                     <?php elseif ($conf['dt_type'] == 3): ?>
                                         <div class="row">
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                $valueArr = explode(',',$conf['value']);
+                                                foreach($valuesArr as $v):
+                                             ?>
                                             <div class="checkbox col-md-2">
                                                 <label>
-                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
-                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
-                                                    <span class="text">Blue</span>
+                                                    <input <?php if(in_array($v,  $valueArr)){echo 'checked';}?> class="colored-blue"  name="<?php echo $conf['ename']; ?>[]" type="checkbox" value="<?php echo $v; ?>">                                        
+                                                                                           
+                                                    <span class="text"><?php echo $v ?></span>
                                                 </label>
                                             </div>
-                                            <div class="checkbox col-md-2" style="margin-left:-20px;">
-                                                <label>
-                                                    <input checked="checked" class="colored-blue" id="form-field-checkbox" name="form-field-checkbox" type="checkbox" value="true">                                        
-                                                    <input name="form-field-checkbox" type="hidden" value="false">                                        
-                                                    <span class="text">Blue</span>
-                                                </label>
-                                            </div>
+                                           <?php endforeach; ?>
                                         </div>
                                     <?php elseif ($conf['dt_type'] == 4): ?>
                                         <select  name="<?php echo $conf['ename'] ?>">
-                                            <option value=""></option>
+                                            <?php 
+                                                $valuesArr = explode(',',$conf['values']);
+                                                foreach($valuesArr as $v):
+                                             ?>
+                                            <option <?php if ($v == $conf['value']) { echo "selected"; } ?> value="<?php echo $v ?>"><?php echo $v ?></option>
+                                        <?php endforeach; ?>
                                         </select>
                                     <?php elseif ($conf['dt_type'] == 5): ?>
-                                        <textarea name=""  class="form-control"></textarea>
+                                        <textarea name="<?php echo $conf['ename'] ?>"  class="form-control">{$conf['value']?$conf['value']:''}</textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
                                         <input  type="file" name="<?php echo $conf['ename'] ?>">
                                     <?php endif; ?>
