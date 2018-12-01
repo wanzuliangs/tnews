@@ -9143,3 +9143,193 @@
 )
 [ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Cate.php ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-01T19:49:54+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/cate/
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：1,325.82kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/cate/add.html',
+  'accept' => '*/*',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.159',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-01T19:53:08+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.067003s] [吞吐率：14.92req/s] [内存消耗：1,502.31kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-01T19:53:10+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/cate/
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,325.85kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/cate/add.html',
+  'accept' => '*/*',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.159',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-01T19:53:10+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.049002s] [吞吐率：20.41req/s] [内存消耗：1,342.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-01T19:53:12+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/cate/
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,325.85kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/cate/add.html',
+  'accept' => '*/*',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.159',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-01T19:53:14+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,252.87kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/cate/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----------gL6gL6ae0GI3ei4GI3KM7Ef1ei4cH2',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.159',
+  'origin' => 'http://127.0.0.1',
+  'content-length' => '728',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'fl_jt.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:91:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html";i:1543664245;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:91:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html";i:1543665177;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -38,6 +38,8 @@
                 //上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
                 //在浏览窗口底部的文件类型下拉菜单中显示的文本
                 'fileTypeDesc': 'Image Files',
+                // 设置发送数据的name值
+                'fileObjName': 'img',
                 'onUploadSuccess' : function(file,data,response) {
                     alert(data);
                 }
@@ -294,7 +296,7 @@
                                     <label for="username" class="col-sm-2 control-label no-padding-right">栏目图片</label>
                                     <div class="row" style="padding-top:6px;">
                                         <div class="col-md-1">
-                                            <label><input id="uploadify"  class="colored-blue" name="" type="file"></label>
+                                            <label><span id="uploadify"  class="colored-blue"></span></label>
                                         </div>
                                     </div>
                                 </div>
