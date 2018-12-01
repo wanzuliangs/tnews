@@ -1,8 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\add.html";i:1543456319;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:91:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html";i:1543664245;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
-	    <meta charset="utf-8">
-    <title>newscms</title>
+        <meta charset="utf-8">
+    <title>ThinkPHP5.0</title>
 
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,37 @@
     <link href="/tnews/public/static/admin/style/demo.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/typicons.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/animate.css" rel="stylesheet">
-    
+    <!-- <link href="/tnews/public/static/admin/plus/uploadify/uploadify.css" rel="stylesheet"> -->
+    <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
+    <script src="/tnews/public/static/admin/plus/uploadify/jquery.uploadify.min.js"></script>
+    <script>
+        $(function () {
+            $("#uploadify").uploadify({
+                //指定swf文件
+                'swf': '/tnews/public/static/admin/plus/uploadify/uploadify.swf',
+                //后台处理的页面
+                'uploader': '<?php echo url("cate/uploadImg"); ?>',
+                'progressData' : 'speed',
+                //按钮显示的文字
+                'buttonText': '上传文件',
+                'buttonClass': 'btn btn-blue btn-sm',
+                //显示的高度和宽度，默认 height 30；width 120
+                //'height': 15,
+                //'width': 80,
+                //上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
+                //在浏览窗口底部的文件类型下拉菜单中显示的文本
+                'fileTypeDesc': 'Image Files',
+                'onUploadSuccess' : function(file,data,response) {
+                    alert(data);
+                }
+            });
+            $('#uploadify-button').removeAttr('style').css({'margin-left':'10px'});
+        });
+    </script>
 </head>
 <body>
-	<!-- 头部 -->
+    <!-- 头部 -->
+    <!-- 头部 -->
     <div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
@@ -81,11 +108,13 @@
 </div>
 
     <!-- /头部 -->
-	
-	<div class="main-container container-fluid">
-		<div class="page-container">
-			            <!-- Page Sidebar -->
-    <div class="page-sidebar" id="sidebar">
+
+    <!-- /头部 -->
+    
+    <div class="main-container container-fluid">
+        <div class="page-container">
+                        <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
                     <input class="searchinput" type="text">
@@ -198,7 +227,7 @@
                     
                 </ul>
                 <!-- /Sidebar Menu -->
-            </div>
+            </div>  
             <!-- /Page Sidebar -->
             <!-- Page Content -->
             <div class="page-content">
@@ -206,9 +235,9 @@
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
                                         <li>
-                        <a href="#">网站配置</a>
+                        <a href="#">栏目管理</a>
                     </li>
-                                        <li class="active">添加配置</li>
+                                        <li class="active">添加栏目</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -218,77 +247,116 @@
                     
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
-        <div class="widget">
-            <div class="widget-header bordered-bottom bordered-blue">
-                <span class="widget-caption">新增配置</span>
-            </div>
+        <form class="form-horizontal" role="form" action="" method="post">
             <div class="widget-body">
-                <div id="horizontal-form">
-                    <form class="form-horizontal" role="form" action="" method="post">
-                        <div class="form-group">
-                            <label for="cname" class="col-sm-2 control-label no-padding-right">中文名</label>
-                            <div class="col-sm-6">
-                                <input class="form-control" id="cname" placeholder="" name="cname" required="" type="text">
+                <div class="widget-main ">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs  tabs-flat">
+                            <li class="active">
+                                <a data-toggle="tab" href="#FlatTab-1" aria-expanded="true">栏目基本信息</a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" href="#FlatTab-2" aria-expanded="false">SEO信息</a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" href="#FlatTab-3" aria-expanded="false">栏目内容</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content  tabs-flat">
+                            <div class="tab-pane active" id="FlatTab-1">
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">上级栏目</label>
+                                    <div class="col-sm-6">
+                                        <select name="">
+                                            <option value="0">顶级栏目</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">分类名称</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" placeholder="" name="" type="text" value=""></div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">是否隐藏</label>
+                                   <div class="col-sm-6" style="padding-top:4px;">
+                                        <label><input  class="colored-blue" name="form-field-radio" type="radio"><span class="text"> 是</span></label>　
+                                         <label><input checked="checked" class="colored-blue" name="form-field-radio" type="radio"><span class="text"> 否</span></label>
+                                   </div>
+                                </div>
+
+                               
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">栏目图片</label>
+                                    <div class="row" style="padding-top:6px;">
+                                        <div class="col-md-1">
+                                            <label><input id="uploadify"  class="colored-blue" name="" type="file"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">列表页模版</label>
+                                   <div class="col-sm-6" style="padding-top:4px;">
+                                        <label><input class="form-control" placeholder="" name="" type="text" value="list_article.htm"></label>　
+                                   </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">频道页模版</label>
+                                   <div class="col-sm-6" style="padding-top:4px;">
+                                        <label><input class="form-control" placeholder="" name="" type="text" value="index_article.htm"></label>　
+                                   </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">内容页模版</label>
+                                   <div class="col-sm-6" style="padding-top:4px;">
+                                        <label><input class="form-control" placeholder="" name="" type="text" value="article_article.htm"></label>　
+                                   </div>
+                                </div>
+
+
                             </div>
-                            <p class="help-block col-sm-4 red">* 必填</p>
+                            <div class="tab-pane" id="FlatTab-2">
+                                 <div class="form-group">
+                                     <label for="username" class="col-sm-2 control-label no-padding-right">标题</label>
+                                     <div class="col-sm-6">
+                                         <input class="form-control" placeholder="" name="" type="text" value=""></div>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="username" class="col-sm-2 control-label no-padding-right">关键词</label>
+                                     <div class="col-sm-6">
+                                         <input class="form-control" placeholder="" name="" type="text" value=""></div>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="username" class="col-sm-2 control-label no-padding-right">描述</label>
+                                     <div class="col-sm-6">
+                                        <textarea name="" id="" class="form-control"></textarea>
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="tab-pane" id="FlatTab-3">
+                                <div class="widget-main no-padding">
+                                    <div id="summernote"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-2 col-md-offset-2">
+                                    <button type="submit" class="btn btn-default">添加分类</button>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="ename" class="col-sm-2 control-label no-padding-right">英文名</label>
-                            <div class="col-sm-6">
-                                <input class="form-control" id="ename" placeholder="" name="ename" required="" type="text">
-                            </div>
-                            <p class="help-block col-sm-4 red">* 必填</p>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="dt_type" class="col-sm-2 control-label no-padding-right">配置类型</label>
-                            <div class="col-sm-6">
-                                <select name="dt_type" style="width: 100%;">
-                                    <option selected="selected" value="1">单行文本框</option>
-                                    <option value="2">单选框</option>
-                                    <option value="3">复选框</option>
-                                    <option value="4">下拉框</option>
-                                    <option value="5">文本域</option>
-                                    <option value="6">附件</option>
-                                </select>
-                            </div>
-                        </div>  
-
-                        <div class="form-group">
-                            <label for="cf_type" class="col-sm-2 control-label no-padding-right">配置分类</label>
-                            <div class="col-sm-6">
-                                <select name="cf_type" style="width: 100%;">
-                                    <option selected="selected" value="1">站点基本信息</option>
-                                    <option value="2">联系方式</option>
-                                    <option value="3">SEO设置</option>
-                                </select>
-                            </div>
-                        </div>  
-
-                        <div class="form-group">
-                            <label for="value" class="col-sm-2 control-label no-padding-right">值/默认值</label>
-                            <div class="col-sm-6">
-                                <textarea class="form-control" name="value" id="value" cols="30" rows="4"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="values" class="col-sm-2 control-label no-padding-right">可选值</label>
-                            <div class="col-sm-6">
-                                <textarea class="form-control" name="values" id="values" cols="30" rows="4"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">保存信息</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>
 
@@ -296,15 +364,17 @@
                 <!-- /Page Body -->
             </div>
             <!-- /Page Content -->
-		</div>	
-	</div>
+        </div>  
+    </div>
 
-	    <!--Basic Scripts-->
-    <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
+        <!--Basic Scripts-->
     <script src="/tnews/public/static/admin/style/bootstrap.js"></script>
-    <script src="/tnews/public/static/admin/style/jquery.js"></script>
     <!--Beyond Scripts-->
     <script src="/tnews/public/static/admin/style/beyond.js"></script>
+     <script src="/tnews/public/static/admin/style/summernote.js"></script>
+    <script>
+        $('#summernote').summernote({ height: 300 });
+    </script>
     
 
 

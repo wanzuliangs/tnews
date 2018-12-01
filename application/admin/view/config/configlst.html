@@ -111,7 +111,7 @@
                                     <?php elseif ($conf['dt_type'] == 5): ?>
                                         <textarea name="<?php echo $conf['ename'] ?>"  class="form-control">{$conf['value']?$conf['value']:''}</textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
-                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>">{if condition="$conf['value'] neq ''"}<img style="height:120px;" src="__ADMIN__/uploads/{$conf['value']}">{/if}
                                     <?php endif; ?>
 
                                 </div>
@@ -172,7 +172,7 @@
                                     <?php elseif ($conf['dt_type'] == 5): ?>
                                         <textarea name="<?php echo $conf['ename'] ?>"  class="form-control">{$conf['value']?$conf['value']:''}</textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
-                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>"> {if condition="$conf['value'] neq ''"}<img style="height:120px;" src="__ADMIN__/uploads/{$conf['value']}">{/if}
                                     <?php endif; ?>
 
                                 </div>
@@ -232,7 +232,7 @@
                                     <?php elseif ($conf['dt_type'] == 5): ?>
                                         <textarea name="<?php echo $conf['ename'] ?>"  class="form-control">{$conf['value']?$conf['value']:''}</textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
-                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>">{if condition="$conf['value'] neq ''"}<img style="height:120px;" src="__ADMIN__/uploads/{$conf['value']}">{/if}
                                     <?php endif; ?>
 
                                 </div>

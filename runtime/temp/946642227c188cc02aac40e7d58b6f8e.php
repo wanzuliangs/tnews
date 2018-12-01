@@ -1,8 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\add.html";i:1543456319;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1543632212;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
-	    <meta charset="utf-8">
-    <title>newscms</title>
+        <meta charset="utf-8">
+    <title>ThinkPHP5.0</title>
 
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,8 @@
     
 </head>
 <body>
-	<!-- 头部 -->
+    <!-- 头部 -->
+    <!-- 头部 -->
     <div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
@@ -81,10 +82,11 @@
 </div>
 
     <!-- /头部 -->
-	
-	<div class="main-container container-fluid">
-		<div class="page-container">
-			            <!-- Page Sidebar -->
+    <!-- /头部 -->
+    
+    <div class="main-container container-fluid">
+        <div class="page-container">
+                        <!-- Page Sidebar -->
     <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
@@ -206,9 +208,9 @@
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
                                         <li>
-                        <a href="#">网站配置</a>
+                        <a href="#">栏目管理</a>
                     </li>
-                                        <li class="active">添加配置</li>
+                                        <li class="active">栏目列表</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -216,77 +218,63 @@
                 <!-- Page Body -->
                 <div class="page-body">
                     
+<button type="button" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url("cate/add"); ?>'"> <i class="fa fa-plus"></i> Add
+</button>
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
         <div class="widget">
-            <div class="widget-header bordered-bottom bordered-blue">
-                <span class="widget-caption">新增配置</span>
-            </div>
             <div class="widget-body">
-                <div id="horizontal-form">
-                    <form class="form-horizontal" role="form" action="" method="post">
-                        <div class="form-group">
-                            <label for="cname" class="col-sm-2 control-label no-padding-right">中文名</label>
-                            <div class="col-sm-6">
-                                <input class="form-control" id="cname" placeholder="" name="cname" required="" type="text">
-                            </div>
-                            <p class="help-block col-sm-4 red">* 必填</p>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="ename" class="col-sm-2 control-label no-padding-right">英文名</label>
-                            <div class="col-sm-6">
-                                <input class="form-control" id="ename" placeholder="" name="ename" required="" type="text">
-                            </div>
-                            <p class="help-block col-sm-4 red">* 必填</p>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="dt_type" class="col-sm-2 control-label no-padding-right">配置类型</label>
-                            <div class="col-sm-6">
-                                <select name="dt_type" style="width: 100%;">
-                                    <option selected="selected" value="1">单行文本框</option>
-                                    <option value="2">单选框</option>
-                                    <option value="3">复选框</option>
-                                    <option value="4">下拉框</option>
-                                    <option value="5">文本域</option>
-                                    <option value="6">附件</option>
-                                </select>
-                            </div>
-                        </div>  
-
-                        <div class="form-group">
-                            <label for="cf_type" class="col-sm-2 control-label no-padding-right">配置分类</label>
-                            <div class="col-sm-6">
-                                <select name="cf_type" style="width: 100%;">
-                                    <option selected="selected" value="1">站点基本信息</option>
-                                    <option value="2">联系方式</option>
-                                    <option value="3">SEO设置</option>
-                                </select>
-                            </div>
-                        </div>  
-
-                        <div class="form-group">
-                            <label for="value" class="col-sm-2 control-label no-padding-right">值/默认值</label>
-                            <div class="col-sm-6">
-                                <textarea class="form-control" name="value" id="value" cols="30" rows="4"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="values" class="col-sm-2 control-label no-padding-right">可选值</label>
-                            <div class="col-sm-6">
-                                <textarea class="form-control" name="values" id="values" cols="30" rows="4"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">保存信息</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="flip-scroll">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">用户名称</th>
+                                <th class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                        <tr>
+                                <td align="center">6</td>
+                                <td align="center">test</td>
+                                <td align="center">
+                                    <a href="/admin/user/edit/id/6.html" class="btn btn-primary btn-sm shiny">
+                                        <i class="fa fa-edit"></i> 编辑
+                                    </a>
+                                    <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/6.html')" class="btn btn-danger btn-sm shiny">
+                                        <i class="fa fa-trash-o"></i> 删除
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td align="center">7</td>
+                                <td align="center">aaaaaa</td>
+                                <td align="center">
+                                    <a href="/admin/user/edit/id/7.html" class="btn btn-primary btn-sm shiny">
+                                        <i class="fa fa-edit"></i> 编辑
+                                    </a>
+                                    <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/7.html')" class="btn btn-danger btn-sm shiny">
+                                        <i class="fa fa-trash-o"></i> 删除
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td align="center">8</td>
+                                <td align="center">bbb</td>
+                                <td align="center">
+                                    <a href="/admin/user/edit/id/8.html" class="btn btn-primary btn-sm shiny">
+                                        <i class="fa fa-edit"></i> 编辑
+                                    </a>
+                                    <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/8.html')" class="btn btn-danger btn-sm shiny">
+                                        <i class="fa fa-trash-o"></i> 删除
+                                    </a>
+                                </td>
+                            </tr>
+                                                    </tbody>
+                    </table>
                 </div>
+                <div>
+                                    </div>
             </div>
         </div>
     </div>
@@ -296,16 +284,13 @@
                 <!-- /Page Body -->
             </div>
             <!-- /Page Content -->
-		</div>	
-	</div>
+        </div>  
+    </div>
 
-	    <!--Basic Scripts-->
+        <!--Basic Scripts-->
     <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
     <script src="/tnews/public/static/admin/style/bootstrap.js"></script>
     <script src="/tnews/public/static/admin/style/jquery.js"></script>
     <!--Beyond Scripts-->
     <script src="/tnews/public/static/admin/style/beyond.js"></script>
-    
-
-
 </body></html>

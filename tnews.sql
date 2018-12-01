@@ -16,6 +16,34 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`tnews` /*!40100 DEFAULT CHARACTER SET u
 
 USE `tnews`;
 
+/*Table structure for table `t_cat` */
+
+DROP TABLE IF EXISTS `t_cat`;
+
+CREATE TABLE `t_cat` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '栏目id',
+  `cate_name` varchar(80) NOT NULL COMMENT '栏目名',
+  `seotitle` varchar(200) NOT NULL COMMENT 'seo标题',
+  `kewords` varchar(200) NOT NULL COMMENT '关键字',
+  `des` text NOT NULL COMMENT '描述',
+  `content` text NOT NULL COMMENT '栏目内容',
+  `status` int(11) NOT NULL DEFAULT '1' COMMENT '栏目属性 0:隐藏 1:显示',
+  `img` varchar(200) NOT NULL COMMENT '栏目图片',
+  `cat_attr` int(11) NOT NULL COMMENT '栏目属性',
+  `list_tmp` varchar(80) NOT NULL COMMENT '列表模板',
+  `index_tmp` varchar(80) NOT NULL COMMENT '频道页模板',
+  `article_tmp` int(11) NOT NULL COMMENT '内容模板',
+  `sort` int(11) NOT NULL DEFAULT '50' COMMENT '排序',
+  `pid` int(11) NOT NULL DEFAULT '0' COMMENT '父级id',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+/*Data for the table `t_cat` */
+
+LOCK TABLES `t_cat` WRITE;
+
+UNLOCK TABLES;
+
 /*Table structure for table `t_conf` */
 
 DROP TABLE IF EXISTS `t_conf`;
@@ -29,13 +57,13 @@ CREATE TABLE `t_conf` (
   `dt_type` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1:输入框 2:单选 3:复选 4:下拉菜单 5:文本域 6:附件',
   `cf_type` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1:基本信息 2:联系方式 3:seo设置',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 /*Data for the table `t_conf` */
 
 LOCK TABLES `t_conf` WRITE;
 
-insert  into `t_conf`(`id`,`cname`,`ename`,`value`,`values`,`dt_type`,`cf_type`) values (12,'网站logo','logo','','',6,1),(10,'站点根路径','siteurl','','',1,1),(11,'静态保存路径','path','','',1,1),(13,'备案号','beian','','',1,1),(14,'联系人','contact','','',1,2),(15,'QQ群','qq','','',1,2),(16,'站点名称','sitename','','',1,3),(17,'站点关键词','keyword','','',1,3),(18,'站点描述','description','','',5,3),(19,'开启缓存','iscache','','',2,3),(20,'是否关闭站点','closeSite','开启','关闭,开启',4,1),(21,'联系方式','contactway','电话','电话,QQ,微信,传真',3,2);
+insert  into `t_conf`(`id`,`cname`,`ename`,`value`,`values`,`dt_type`,`cf_type`) values (12,'网站logo','logo','20181201\\25d7461dc7033e969a5af99d8b69458c.jpg','',6,1),(10,'站点根路径','siteurl','111','',1,1),(11,'静态保存路径','path','22','',1,1),(13,'备案号','beian','33','',1,1),(14,'联系人','contact','442','',1,2),(15,'QQ群','qq','55','',1,2),(16,'站点名称','sitename','66','',1,3),(17,'站点关键词','keyword','77','',1,3),(18,'站点描述','description','88','',5,3),(19,'开启缓存','iscache','否','是,否',2,3),(20,'是否关闭站点','closeSite','关闭','关闭,开启',4,1),(21,'联系方式','contactway','电话,QQ','电话,QQ,微信,传真',3,2),(22,'二维码','qcode','20181201\\447d031f2e1524764e6cc457f57e1bda.jpg','',6,1);
 
 UNLOCK TABLES;
 

@@ -1,6 +1,6 @@
 <?php
 namespace app\admin\controller;
-use think\Controller;
+
 class Config extends Common
 {
     public function lst()

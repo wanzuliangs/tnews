@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\index\index.html";i:1543369987;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\index\index.html";i:1543369987;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
@@ -93,7 +93,7 @@
                 <!-- Sidebar Menu -->
                 <ul class="nav sidebar-menu">
                     <!--Dashboard-->
-                    <li>
+                    <li <?php if($contrname == 'Config'): ?>class="open"<?php endif; ?>>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-asterisk"></i>
                             <span class="menu-text">网站配置</span>
@@ -127,6 +127,30 @@
                                 <a href="/admin/document/index.html">
                                     <span class="menu-text">
                                         管理列表                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                        </ul>                            
+                    </li> 
+
+                     <li <?php if($contrname == 'Cate'): ?>class="open"<?php endif; ?>>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa  fa-tasks"></i>
+                            <span class="menu-text">栏目管理</span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="<?php echo url('cate/index'); ?>">
+                                    <span class="menu-text">
+                                        栏目列表                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo url('cate/add'); ?>">
+                                    <span class="menu-text">
+                                        栏目添加                                    </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>

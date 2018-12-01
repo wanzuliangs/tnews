@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html><head>
+        <meta charset="utf-8">
+    <title>ThinkPHP5.0</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__ADMIN__/style/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/style/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/style/demo.css" rel="stylesheet">
+    <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
+    <link href="__ADMIN__/style/animate.css" rel="stylesheet">
+    <!-- <link href="__ADMIN__/plus/uploadify/uploadify.css" rel="stylesheet"> -->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/plus/uploadify/jquery.uploadify.min.js"></script>
+    <script>
+        $(function () {
+            $("#uploadify").uploadify({
+                //指定swf文件
+                'swf': '__ADMIN__/plus/uploadify/uploadify.swf',
+                //后台处理的页面
+                'uploader': '{:url("cate/uploadImg")}',
+                'progressData' : 'speed',
+                //按钮显示的文字
+                'buttonText': '上传文件',
+                'buttonClass': 'btn btn-blue btn-sm',
+                //显示的高度和宽度，默认 height 30；width 120
+                //'height': 15,
+                //'width': 80,
+                //上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
+                //在浏览窗口底部的文件类型下拉菜单中显示的文本
+                'fileTypeDesc': 'Image Files',
+                'onUploadSuccess' : function(file,data,response) {
+                    alert(data);
+                }
+            });
+            $('#uploadify-button').removeAttr('style').css({'margin-left':'10px'});
+        });
+    </script>
+</head>
+<body>
+    <!-- 头部 -->
+    {include file="common/head"}
+
+    <!-- /头部 -->
+    
+    <div class="main-container container-fluid">
+        <div class="page-container">
+                        <!-- Page Sidebar -->
+            {include file="common/left"}  
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">栏目管理</a>
+                    </li>
+                                        <li class="active">添加栏目</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <form class="form-horizontal" role="form" action="" method="post">
+            <div class="widget-body">
+                <div class="widget-main ">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs  tabs-flat">
+                            <li class="active">
+                                <a data-toggle="tab" href="#FlatTab-1" aria-expanded="true">栏目基本信息</a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" href="#FlatTab-2" aria-expanded="false">SEO信息</a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" href="#FlatTab-3" aria-expanded="false">栏目内容</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content  tabs-flat">
+                            <div class="tab-pane active" id="FlatTab-1">
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">上级栏目</label>
+                                    <div class="col-sm-6">
+                                        <select name="">
+                                            <option value="0">顶级栏目</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">分类名称</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" placeholder="" name="" type="text" value=""></div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">是否隐藏</label>
+                                   <div class="col-sm-6" style="padding-top:4px;">
+                                        <label><input  class="colored-blue" name="form-field-radio" type="radio"><span class="text"> 是</span></label>　
+                                         <label><input checked="checked" class="colored-blue" name="form-field-radio" type="radio"><span class="text"> 否</span></label>
+                                   </div>
+                                </div>
+
+                               
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">栏目图片</label>
+                                    <div class="row" style="padding-top:6px;">
+                                        <div class="col-md-1">
+                                            <label><input id="uploadify"  class="colored-blue" name="" type="file"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">列表页模版</label>
+                                   <div class="col-sm-6" style="padding-top:4px;">
+                                        <label><input class="form-control" placeholder="" name="" type="text" value="list_article.htm"></label>　
+                                   </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">频道页模版</label>
+                                   <div class="col-sm-6" style="padding-top:4px;">
+                                        <label><input class="form-control" placeholder="" name="" type="text" value="index_article.htm"></label>　
+                                   </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right">内容页模版</label>
+                                   <div class="col-sm-6" style="padding-top:4px;">
+                                        <label><input class="form-control" placeholder="" name="" type="text" value="article_article.htm"></label>　
+                                   </div>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane" id="FlatTab-2">
+                                 <div class="form-group">
+                                     <label for="username" class="col-sm-2 control-label no-padding-right">标题</label>
+                                     <div class="col-sm-6">
+                                         <input class="form-control" placeholder="" name="" type="text" value=""></div>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="username" class="col-sm-2 control-label no-padding-right">关键词</label>
+                                     <div class="col-sm-6">
+                                         <input class="form-control" placeholder="" name="" type="text" value=""></div>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="username" class="col-sm-2 control-label no-padding-right">描述</label>
+                                     <div class="col-sm-6">
+                                        <textarea name="" id="" class="form-control"></textarea>
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="tab-pane" id="FlatTab-3">
+                                <div class="widget-main no-padding">
+                                    <div id="summernote"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-2 col-md-offset-2">
+                                    <button type="submit" class="btn btn-default">添加分类</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+        </div>  
+    </div>
+
+        <!--Basic Scripts-->
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+     <script src="__ADMIN__/style/summernote.js"></script>
+    <script>
+        $('#summernote').summernote({ height: 300 });
+    </script>
+    
+
+
+</body></html>

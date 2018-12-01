@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:99:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html";i:1543567591;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543629517;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:99:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html";i:1543660368;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -135,6 +135,30 @@
                         </ul>                            
                     </li> 
 
+                     <li <?php if($contrname == 'Cate'): ?>class="open"<?php endif; ?>>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa  fa-tasks"></i>
+                            <span class="menu-text">栏目管理</span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="<?php echo url('cate/index'); ?>">
+                                    <span class="menu-text">
+                                        栏目列表                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo url('cate/add'); ?>">
+                                    <span class="menu-text">
+                                        栏目添加                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                        </ul>                            
+                    </li> 
+
                     <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-file-text"></i>
@@ -259,8 +283,7 @@
                                     <?php elseif ($conf['dt_type'] == 5): ?>
                                         <textarea name="<?php echo $conf['ename'] ?>"  class="form-control"><?php echo !empty($conf['value'])?$conf['value']:''; ?></textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
-                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
-                                    <?php endif; ?>
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>"><?php if($conf['value'] != ''): ?><img style="height:120px;" src="/tnews/public/static/admin/uploads/<?php echo $conf['value']; ?>"><?php endif; endif; ?>
 
                                 </div>
                                 <p class="help-block col-sm-4 red">* 必填</p>
@@ -318,8 +341,7 @@
                                     <?php elseif ($conf['dt_type'] == 5): ?>
                                         <textarea name="<?php echo $conf['ename'] ?>"  class="form-control"><?php echo !empty($conf['value'])?$conf['value']:''; ?></textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
-                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
-                                    <?php endif; ?>
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>"> <?php if($conf['value'] != ''): ?><img style="height:120px;" src="/tnews/public/static/admin/uploads/<?php echo $conf['value']; ?>"><?php endif; endif; ?>
 
                                 </div>
                                 <p class="help-block col-sm-4 red">* 必填</p>
@@ -376,8 +398,7 @@
                                     <?php elseif ($conf['dt_type'] == 5): ?>
                                         <textarea name="<?php echo $conf['ename'] ?>"  class="form-control"><?php echo !empty($conf['value'])?$conf['value']:''; ?></textarea>
                                     <?php elseif ($conf['dt_type'] == 6): ?>
-                                        <input  type="file" name="<?php echo $conf['ename'] ?>">
-                                    <?php endif; ?>
+                                        <input  type="file" name="<?php echo $conf['ename'] ?>"><?php if($conf['value'] != ''): ?><img style="height:120px;" src="/tnews/public/static/admin/uploads/<?php echo $conf['value']; ?>"><?php endif; endif; ?>
 
                                 </div>
                                 <p class="help-block col-sm-4 red">* 必填</p>
