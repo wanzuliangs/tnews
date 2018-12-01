@@ -1,0 +1,818 @@
+---------------------------------------------------------------
+[ 2018-12-01T09:14:35+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/
+[运行时间：0.132008s] [吞吐率：7.58req/s] [内存消耗：1,410.73kb] [文件加载：35]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-01T09:14:38+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.203011s] [吞吐率：4.93req/s] [内存消耗：2,128.84kb] [文件加载：42]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:14:45+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.168010s] [吞吐率：5.95req/s] [内存消耗：2,044.84kb] [文件加载：41]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryYFnk3n6lA5CBbz2q',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '1401',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'siteurl' => '111',
+  'path' => '22',
+  'beian' => '33',
+  'closeSite' => '关闭',
+  'contact' => '44',
+  'qq' => '55',
+  'contactway' => 
+  array (
+    0 => '电话',
+  ),
+  'sitename' => '66',
+  'keyword' => '77',
+  'description' => '88',
+  'iscache' => '否',
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `ename` FROM `t_conf` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `ename` FROM `t_conf` WHERE  `dt_type` = 6 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='111'  WHERE  `ename` = 'siteurl' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='22'  WHERE  `ename` = 'path' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='33'  WHERE  `ename` = 'beian' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='关闭'  WHERE  `ename` = 'closeSite' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='44'  WHERE  `ename` = 'contact' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='55'  WHERE  `ename` = 'qq' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='电话'  WHERE  `ename` = 'contactway' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='66'  WHERE  `ename` = 'sitename' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='77'  WHERE  `ename` = 'keyword' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='88'  WHERE  `ename` = 'description' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='否'  WHERE  `ename` = 'iscache' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:14:47+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.119007s] [吞吐率：8.40req/s] [内存消耗：2,128.94kb] [文件加载：42]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:54:03+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,198.49kb] [文件加载：31]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-01T09:54:11+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.084005s] [吞吐率：11.90req/s] [内存消耗：2,135.04kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:56:03+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.092006s] [吞吐率：10.87req/s] [内存消耗：2,305.09kb] [文件加载：45]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:56:14+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：2,135.04kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:56:16+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/lst.html
+[运行时间：0.191011s] [吞吐率：5.24req/s] [内存消耗：2,402.45kb] [文件加载：49]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:56:24+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=2
+[运行时间：0.085004s] [吞吐率：11.76req/s] [内存消耗：2,222.74kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 10,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:56:26+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=1
+[运行时间：0.096006s] [吞吐率：10.42req/s] [内存消耗：2,245.08kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:57:17+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=1
+[运行时间：0.100006s] [吞吐率：10.00req/s] [内存消耗：2,402.63kb] [文件加载：49]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:57:21+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=1
+[运行时间：0.093005s] [吞吐率：10.75req/s] [内存消耗：2,245.09kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:57:26+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=1
+[运行时间：0.102006s] [吞吐率：9.80req/s] [内存消耗：2,245.09kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:57:28+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/lst.html
+[运行时间：0.097005s] [吞吐率：10.31req/s] [内存消耗：2,244.83kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html?page=1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:57:29+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：2,304.99kb] [文件加载：45]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:57:34+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.080004s] [吞吐率：12.50req/s] [内存消耗：2,135.05kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:57:35+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/lst.html
+[运行时间：0.093006s] [吞吐率：10.75req/s] [内存消耗：2,244.89kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:57:37+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：2,134.96kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:58:39+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.109006s] [吞吐率：9.17req/s] [内存消耗：2,305.01kb] [文件加载：45]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-01T09:58:58+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.080005s] [吞吐率：12.50req/s] [内存消耗：2,134.97kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]

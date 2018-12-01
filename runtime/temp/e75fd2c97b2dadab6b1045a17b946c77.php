@@ -1,9 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\lst.html";i:1543387276;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543629435;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\index\index.html";i:1543369987;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543374904;}*/ ?>
 <!DOCTYPE html>
 <html><head>
-        <meta charset="utf-8">
-    <title>newscms</title>
-
+    <meta charset="utf-8">
+    <title>ThinkPHP5.0</title>
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +11,12 @@
     <link href="/tnews/public/static/admin/style/bootstrap.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/font-awesome.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/weather-icons.css" rel="stylesheet">
-
     <!--Beyond styles-->
     <link id="beyond-link" href="/tnews/public/static/admin/style/beyond.css" rel="stylesheet" type="text/css">
     <link href="/tnews/public/static/admin/style/demo.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/typicons.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/animate.css" rel="stylesheet">
-    
+
 </head>
 <body>
     <!-- 头部 -->
@@ -81,12 +79,10 @@
 </div>
 
     <!-- /头部 -->
-    
     <div class="main-container container-fluid">
         <div class="page-container">
-                        <!-- Page Sidebar -->
-            
-    <div class="page-sidebar" id="sidebar">
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
                     <input class="searchinput" type="text">
@@ -97,7 +93,7 @@
                 <!-- Sidebar Menu -->
                 <ul class="nav sidebar-menu">
                     <!--Dashboard-->
-                    <li <?php if ($contrname == 'Config'): echo 'class="open"'; endif; ?>>
+                    <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-asterisk"></i>
                             <span class="menu-text">网站配置</span>
@@ -182,82 +178,29 @@
                 <!-- Page Breadcrumb -->
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
-                                        <li>
-                        <a href="#">网站配置</a>
-                    </li>
-                                        <li class="active">配置管理</li>
-                                        </ul>
+                        <li class="active">控制面板</li>
+                    </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
-
                 <!-- Page Body -->
                 <div class="page-body">
-                    
-<button type="button" tooltip="添加配置" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url("add"); ?>'"> <i class="fa fa-plus"></i> Add
-</button>
-<div class="row">
-    <div class="col-lg-12 col-sm-12 col-xs-12">
-        <div class="widget">
-            <div class="widget-body">
-                <div class="flip-scroll">
-                    <table class="table table-bordered table-hover">
-                        <thead class="">
-                            <tr>
-                                <th class="text-center">ID</th>
-                                <th class="text-center">中文名</th>
-                                <th class="text-center">英文名</th>
-                                <th class="text-center">值/默认值</th>
-                                <th class="text-center">可选值</th>
-                                <th class="text-center">操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           <?php if(is_array($confList) || $confList instanceof \think\Collection || $confList instanceof \think\Paginator): $i = 0; $__LIST__ = $confList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?> 
-                            <tr>
-                                <td align="center"><?php echo $vo['id']; ?></td>
-                                <td align="center"><?php echo $vo['cname']; ?></td>
-                                <td align="center"><?php echo $vo['ename']; ?></td>
-                                <td align="center"><?php if($vo['value'] != ''): ?><?php echo $vo['value']; else: ?>未定义<?php endif; ?></td>
-                                <td align="center"><?php if($vo['values'] != ''): ?><?php echo $vo['values']; else: ?>未定义<?php endif; ?></td>
-                                <td align="center">
-                                    <a href="<?php echo url('edit',array('id'=>$vo['id'])); ?>" class="btn btn-primary btn-sm shiny"> <i class="fa fa-edit"></i>
-                                        编辑
-                                    </a>
-                                    <a href="#" onClick="warning('确实要删除吗', '<?php echo url('delete',array('id'=>$vo['id'])); ?>')" class="btn btn-danger btn-sm shiny"> <i class="fa fa-trash-o"></i>
-                                        删除
-                                    </a>
-                                </td>
-                            </tr>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                    <div class="row" style="padding-top:10px;">
-                        <div class="col-md-2 col-md-offset-10">
-                        <?php echo $confList->render(); ?>
-                        </div> 
+
+                    <div style="text-align:center; line-height:1000%; font-size:24px;">
+                        大型cms系统<br>
                     </div>
                 </div>
-                <div>
-                                    </div>
+
             </div>
+            <!-- /Page Body -->
         </div>
+        <!-- /Page Content -->
     </div>
 </div>
-
-                </div>
-                <!-- /Page Body -->
-            </div>
-            <!-- /Page Content -->
-        </div>  
-    </div>
-
-        <!--Basic Scripts-->
-    <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
-    <script src="/tnews/public/static/admin/style/bootstrap.js"></script>
-    <script src="/tnews/public/static/admin/style/jquery.js"></script>
-    <!--Beyond Scripts-->
-    <script src="/tnews/public/static/admin/style/beyond.js"></script>
-    
-
+<!--Basic Scripts-->
+<script src="/tnews/public/static/admin/style/jquery_002.js"></script>
+<script src="/tnews/public/static/admin/style/bootstrap.js"></script>
+<script src="/tnews/public/static/admin/style/jquery.js"></script>
+<!--Beyond Scripts-->
+<script src="/tnews/public/static/admin/style/beyond.js"></script>
 
 </body></html>

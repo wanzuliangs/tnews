@@ -5920,3 +5920,40 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.013001s ]
 [ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-11-30T17:38:53+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.091006s] [吞吐率：10.99req/s] [内存消耗：2,129.26kb] [文件加载：42]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\web\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPDT77362966=1522114876751468045960; NPDT77362966fistvisitetime=1522114876787; NPDT77362966IP=%7C1.192.176.123%7C; NPDT77362966visitecounts=2; Hm_lvt_db5282b7674d846f2ea000fa76dbee25=1522114877,1522219160; NPDT77362966lastvisitetime=1522219305282; NPDT77362966visitepages=3; Hm_lvt_622450c89bc248bfa3f11ad4c9b3ee61=1537181104,1537181121',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
