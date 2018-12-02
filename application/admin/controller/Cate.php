@@ -23,7 +23,7 @@ class Cate extends Common
         }
         // 获取栏目
         $catlist = model('cat')->getCateTree();
-        // dump(collection($catlist)->toArray());die;
+        //dump(collection($catlist)->toArray());die;
         $this->assign('catlist',$catlist);
     	return view();
     }

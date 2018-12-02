@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:92:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html";i:1543766299;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1543722520;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1543722520;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:92:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html";i:1543769269;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1543722520;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1543722520;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -287,7 +287,7 @@
                                         <select name="pid">
                                             <option value="0">顶级栏目</option>
                                             <?php if(is_array($catlist) || $catlist instanceof \think\Collection || $catlist instanceof \think\Paginator): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cat): $mod = ($i % 2 );++$i;?>
-                                                <option value="<?php echo $cat['id']; ?>"><?php echo $cat['cate_name']; ?></option>
+                                            <option value="<?php echo $cat['id']; ?>"><?php echo $cat['cate_name']; ?></option>
                                             <?php endforeach; endif; else: echo "" ;endif; ?>
                                         </select>
                                     </div>
