@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html";i:1543725884;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1543722520;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1543722520;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html";i:1543765130;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1543722520;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1543722520;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -217,9 +217,8 @@
 
     <!-- Page Body -->
     <div class="page-body">
-
-        <button type="button" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url("
-            cate/add "); ?>'">
+    
+        <button type="button" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href='<?php echo url('cate/add'); ?>'">
             <i class="fa fa-plus"></i> Add
         </button>
         <div class="row">
@@ -281,7 +280,7 @@
                 </div>
             </div>
         </div>
-
+    
     </div>
     <!-- /Page Body -->
 </div>

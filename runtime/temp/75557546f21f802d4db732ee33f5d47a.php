@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:92:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html";i:1543741837;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1543722520;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1543722520;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:92:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html";i:1543766299;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1543722520;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1543722520;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -272,46 +272,57 @@
                         <div class="tab-content  tabs-flat">
                             <div class="tab-pane active" id="FlatTab-1">
                                 <div class="form-group">
-                                    <label for="mode_id" class="col-sm-2 control-label no-padding-right">栏目模型</label>
+                                    <label for="model_id" class="col-sm-2 control-label no-padding-right">栏目模型</label>
                                     <div class="col-sm-6">
-                                        <select name="mode_id">
+                                        <select name="model_id">
                                             <option value="1">文章模型</option>
+                                            <option value="2">电影模型</option>
                                         </select>
                                     </div>
                                 </div>
-
+                        
                                 <div class="form-group">
                                     <label for="pid" class="col-sm-2 control-label no-padding-right">上级栏目</label>
                                     <div class="col-sm-6">
                                         <select name="pid">
                                             <option value="0">顶级栏目</option>
+                                            <?php if(is_array($catlist) || $catlist instanceof \think\Collection || $catlist instanceof \think\Paginator): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cat): $mod = ($i % 2 );++$i;?>
+                                                <option value="<?php echo $cat['id']; ?>"><?php echo $cat['cate_name']; ?></option>
+                                            <?php endforeach; endif; else: echo "" ;endif; ?>
                                         </select>
                                     </div>
                                 </div>
-
+                        
                                 <div class="form-group">
                                     <label for="cate_name" class="col-sm-2 control-label no-padding-right">分类名称</label>
                                     <div class="col-sm-6">
-                                        <input class="form-control" placeholder="" name="cate_name" type="text" value=""></div>
+                                        <input class="form-control" placeholder="" name="cate_name" type="text" value="">
+                                    </div>
                                     <p class="help-block col-sm-4 red">* 必填</p>
                                 </div>
-
+                        
                                 <div class="form-group">
                                     <label for="status" class="col-sm-2 control-label no-padding-right">是否隐藏</label>
-                                   <div class="col-sm-6" style="padding-top:4px;">
-                                        <label><input  class="colored-blue" name="status" type="radio"><span class="text"> 是</span></label>　
-                                         <label><input checked="checked" class="colored-blue" name="status" type="radio"><span class="text"> 否</span></label>
-                                   </div>
+                                    <div class="col-sm-6" style="padding-top:4px;">
+                                        <label>
+                                            <input class="colored-blue" name="status" type="radio" value="1">
+                                            <span class="text"> 是</span>
+                                        </label>
+                                        <label>
+                                            <input checked="checked" class="colored-blue" name="status" type="radio" value="0">
+                                            <span class="text"> 否</span>
+                                        </label>
+                                    </div>
                                 </div>
-
-
+                        
+                        
                                 <div class="form-group">
                                     <input type="hidden" name="img" value="">
                                     <label for="username" class="col-sm-2 control-label no-padding-right">栏目图片</label>
                                     <div class="row" style="padding-top:6px;">
                                         <div class="col-md-1">
                                             <label>
-                                                <span id="uploadify"  class="colored-blue"></span>
+                                                <span id="uploadify" class="colored-blue"></span>
                                             </label>
                                         </div>
                                     </div>
@@ -319,53 +330,61 @@
                                 <div class="form-group">
                                     <div class="col-sm-4 col-sm-offset-2" id="catimg"></div>
                                 </div>
-
+                        
                                 <div class="form-group">
                                     <label for="list_tmp" class="col-sm-2 control-label no-padding-right">列表页模版</label>
-                                   <div class="col-sm-6" style="padding-top:4px;">
-                                        <label><input class="form-control" placeholder="" name="list_tmp" type="text" value="list_article.htm"></label>　
-                                   </div>
+                                    <div class="col-sm-6" style="padding-top:4px;">
+                                        <label>
+                                            <input class="form-control" placeholder="" name="list_tmp" type="text" value="list_article.htm">
+                                        </label>
+                                    </div>
                                 </div>
-
+                        
                                 <div class="form-group">
                                     <label for="index_tmp" class="col-sm-2 control-label no-padding-right">频道页模版</label>
-                                   <div class="col-sm-6" style="padding-top:4px;">
-                                        <label><input class="form-control" placeholder="" name="index_tmp" type="text" value="index_article.htm"></label>　
-                                   </div>
+                                    <div class="col-sm-6" style="padding-top:4px;">
+                                        <label>
+                                            <input class="form-control" placeholder="" name="index_tmp" type="text" value="index_article.htm">
+                                        </label>
+                                    </div>
                                 </div>
-
+                        
                                 <div class="form-group">
                                     <label for="article_tmp" class="col-sm-2 control-label no-padding-right">内容页模版</label>
-                                   <div class="col-sm-6" style="padding-top:4px;">
-                                        <label><input class="form-control" placeholder="" name="article_tmp" type="text" value="article_article.htm"></label>　
-                                   </div>
+                                    <div class="col-sm-6" style="padding-top:4px;">
+                                        <label>
+                                            <input class="form-control" placeholder="" name="article_tmp" type="text" value="article_article.htm">
+                                        </label>
+                                    </div>
                                 </div>
-
-
+                        
+                        
                             </div>
                             <div class="tab-pane" id="FlatTab-2">
-                                 <div class="form-group">
-                                     <label for="seotitle" class="col-sm-2 control-label no-padding-right">标题</label>
-                                     <div class="col-sm-6">
-                                         <input class="form-control" placeholder="" name="seotitle" type="text" value=""></div>
-                                 </div>
-
-                                 <div class="form-group">
-                                     <label for="kewords" class="col-sm-2 control-label no-padding-right">关键词</label>
-                                     <div class="col-sm-6">
-                                         <input class="form-control" placeholder="" name="kewords" type="text" value=""></div>
-                                 </div>
-
-                                 <div class="form-group">
-                                     <label for="des" class="col-sm-2 control-label no-padding-right">描述</label>
-                                     <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="seotitle" class="col-sm-2 control-label no-padding-right">标题</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" placeholder="" name="seotitle" type="text" value="">
+                                    </div>
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="kewords" class="col-sm-2 control-label no-padding-right">关键词</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" placeholder="" name="kewords" type="text" value="">
+                                    </div>
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="des" class="col-sm-2 control-label no-padding-right">描述</label>
+                                    <div class="col-sm-6">
                                         <textarea name="des" class="form-control"></textarea>
-                                     </div>
-                                 </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="FlatTab-3">
                                 <div class="widget-main no-padding">
-                                    <div id="summernote"></div>
+                                    <textarea name="content" id="summernote" class="form-control"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">

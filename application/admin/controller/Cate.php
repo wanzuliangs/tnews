@@ -5,11 +5,26 @@ class Cate extends Common
 {
     public function index()
     {
+
         return view();
     }
 
     public function add()
     {
+        if (request()->isPost()) {
+            $data = input('post.');
+            $res = db('cat')->insert($data);
+            if ($res) {
+                $this->success('添加栏目成功!',url('index'));
+            } else {
+                $this->error('添加栏目失败!');
+            }
+            return;
+        }
+        // 获取栏目
+        $catlist = model('cat')->getCateTree();
+        // dump(collection($catlist)->toArray());die;
+        $this->assign('catlist',$catlist);
     	return view();
     }
 
