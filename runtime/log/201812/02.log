@@ -1,0 +1,2040 @@
+---------------------------------------------------------------
+[ 2018-12-02T11:50:22+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin
+[运行时间：0.046003s] [吞吐率：21.74req/s] [内存消耗：1,467.10kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T11:50:24+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.248014s] [吞吐率：4.03req/s] [内存消耗：2,305.81kb] [文件加载：45]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.172010s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T11:50:30+08:00 ] 0.0.0.0 POST localhost/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.089006s] [吞吐率：11.24req/s] [内存消耗：2,184.02kb] [文件加载：44]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarye39CJN4q8KGiZhvd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '1401',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'siteurl' => '11',
+  'path' => '22',
+  'beian' => '33',
+  'closeSite' => '关闭',
+  'contact' => '44',
+  'qq' => '55',
+  'contactway' => 
+  array (
+    0 => '电话',
+  ),
+  'sitename' => '66',
+  'keyword' => '77',
+  'description' => '888',
+  'iscache' => '是',
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'contrname',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `ename` FROM `t_conf` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `ename` FROM `t_conf` WHERE  `dt_type` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='11'  WHERE  `ename` = 'siteurl' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='22'  WHERE  `ename` = 'path' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='33'  WHERE  `ename` = 'beian' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='关闭'  WHERE  `ename` = 'closeSite' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='44'  WHERE  `ename` = 'contact' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='55'  WHERE  `ename` = 'qq' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='电话'  WHERE  `ename` = 'contactway' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='66'  WHERE  `ename` = 'sitename' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='77'  WHERE  `ename` = 'keyword' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='888'  WHERE  `ename` = 'description' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `value`='是'  WHERE  `ename` = 'iscache' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T11:50:31+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.076005s] [吞吐率：13.16req/s] [内存消耗：2,134.17kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T11:50:35+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.059003s] [吞吐率：16.95req/s] [内存消耗：2,134.17kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T11:50:38+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/lst.html
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：2,402.73kb] [文件加载：49]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T11:50:43+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/edit/id/19.html
+[运行时间：0.071005s] [吞吐率：14.08req/s] [内存消耗：2,258.91kb] [文件加载：45]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '19',
+)
+[ info ] [ RUN ] app\admin\controller\Config->edit[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\edit.html [ array (
+  0 => 'contrname',
+  1 => 'confInfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-02T11:50:57+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.076004s] [吞吐率：13.16req/s] [内存消耗：2,134.18kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T11:50:58+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/lst.html
+[运行时间：0.074004s] [吞吐率：13.51req/s] [内存消耗：2,243.95kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-02T11:51:00+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/index.html
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,475.69kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T11:51:05+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.042003s] [吞吐率：23.81req/s] [内存消耗：1,501.34kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/cate/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T11:51:06+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,325.12kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/cate/add.html',
+  'accept' => '*/*',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.187',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T11:52:54+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,325.12kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/cate/add.html',
+  'accept' => '*/*',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.187',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T11:52:56+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.044002s] [吞吐率：22.73req/s] [内存消耗：1,341.37kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/cate/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T11:52:57+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,325.12kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/cate/add.html',
+  'accept' => '*/*',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.187',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T12:44:56+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,323.97kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T12:44:58+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.064003s] [吞吐率：15.62req/s] [内存消耗：2,134.09kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-02T12:45:01+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/lst.html
+[运行时间：0.085005s] [吞吐率：11.76req/s] [内存消耗：2,243.95kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-02T12:45:03+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/add.html
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,497.29kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T12:45:08+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/index.html
+[运行时间：0.040003s] [吞吐率：25.00req/s] [内存消耗：1,476.03kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T14:53:13+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/index.html
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,325.72kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:24:58+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/index.html
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：1,325.47kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/cate/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:24:58+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.048003s] [吞吐率：20.83req/s] [内存消耗：1,341.43kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/cate/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:24:59+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.044003s] [吞吐率：22.73req/s] [内存消耗：1,325.09kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543735499083',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:25:29+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.041003s] [吞吐率：24.39req/s] [内存消耗：1,249.96kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------Ef1gL6ei4ae0ei4ae0ei4ei4GI3GI3',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:27:43+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/lst.html
+[运行时间：0.092005s] [吞吐率：10.87req/s] [内存消耗：2,243.95kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/cate/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T15:27:47+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/edit/id/18.html
+[运行时间：0.069003s] [吞吐率：14.49req/s] [内存消耗：2,106.00kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Config->edit[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\edit.html [ array (
+  0 => 'contrname',
+  1 => 'confInfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T15:27:50+08:00 ] 0.0.0.0 POST localhost/tnews/public/index.php/admin/config/edit/id/18.html
+[运行时间：0.087005s] [吞吐率：11.49req/s] [内存消耗：2,361.18kb] [文件加载：48]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/edit/id/18.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '103',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+  'cname' => '站点描述',
+  'ename' => 'description',
+  'dt_type' => '5',
+  'cf_type' => '3',
+  'value' => '88',
+  'values' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Config->edit[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'contrname',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] UPDATE `t_conf`  SET `cname`='站点描述',`ename`='description',`dt_type`=5,`cf_type`=3,`value`='88',`values`=''  WHERE  `id` = 18 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T15:27:52+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/config/lst.html
+[运行时间：0.096005s] [吞吐率：10.42req/s] [内存消耗：2,243.94kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/edit/id/18.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->lst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\lst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_conf` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cname`,`ename`,`value`,`values` FROM `t_conf` LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-02T15:27:56+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.042003s] [吞吐率：23.81req/s] [内存消耗：1,341.43kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:27:57+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,325.09kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543735676596',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:39:02+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,343.09kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:39:03+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,326.45kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543736342636',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:39:05+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,343.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:39:06+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,326.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543736345863',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:39:13+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.092006s] [吞吐率：10.87req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------ei4ae0GI3KM7ae0ae0ei4Ij5Ij5ae0',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:40:45+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------Ef1Ij5cH2ei4ae0Ij5gL6Ij5Ef1ae0',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:55:31+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.047002s] [吞吐率：21.28req/s] [内存消耗：1,503.62kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:55:32+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.039002s] [吞吐率：25.64req/s] [内存消耗：1,326.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543737331922',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:55:34+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------ei4GI3Ij5Ij5cH2ae0ei4ei4Ef1Ij5',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:57:16+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.043003s] [吞吐率：23.25req/s] [内存消耗：1,503.85kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:57:17+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,326.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543737436777',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T15:57:21+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------gL6Ef1KM7gL6ei4ei4cH2gL6cH2ae0',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:00:23+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：1,504.05kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:00:24+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.044003s] [吞吐率：22.73req/s] [内存消耗：1,326.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543737623519',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:00:27+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------gL6Ef1ae0Ef1ae0ei4GI3gL6ae0GI3',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:03:38+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,504.03kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:03:39+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,326.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543737818667',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:03:42+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------ei4GI3Ij5KM7ei4gL6gL6KM7gL6Ef1',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:39:27+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.048002s] [吞吐率：20.83req/s] [内存消耗：1,504.26kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:39:29+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.041002s] [吞吐率：24.39req/s] [内存消耗：1,326.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543739968496',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:42:00+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.038003s] [吞吐率：26.31req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------Ef1gL6GI3Ef1ae0KM7cH2KM7ae0ae0',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:44:04+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,326.45kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543739968496',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:50:40+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,504.34kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:50:41+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,326.45kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543740641071',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:50:44+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------cH2KM7GI3GI3Ij5ae0Ij5GI3cH2gL6',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T16:57:11+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,326.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543740641071',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T17:10:51+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,505.65kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T17:10:52+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.041002s] [吞吐率：24.39req/s] [内存消耗：1,326.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543741852082',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T17:12:04+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/add.html
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,343.30kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/index.php/admin/config/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T17:12:05+08:00 ] 0.0.0.0 GET localhost/tnews/public/index.php/admin/cate/
+[运行时间：0.042003s] [吞吐率：23.81req/s] [内存消耗：1,326.86kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_636802045446222199ae541e32c8133e=1527694741; pgv_pvi=6433497088; wp-settings-1=editor%3Dhtml; wp-settings-time-1=1541776314',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/tnews/public/static/admin/plus/uploadify/uploadify.swf?preventswfcaching=1543741924941',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-02T17:12:09+08:00 ] 127.0.0.1 POST localhost/tnews/public/index.php/admin/cate/uploadimg.html
+[运行时间：0.036003s] [吞吐率：27.78req/s] [内存消耗：1,315.37kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '50405',
+  'host' => 'localhost',
+  'user-agent' => 'Shockwave Flash',
+  'content-type' => 'multipart/form-data; boundary=----------Ef1gL6GI3ae0cH2KM7Ef1cH2KM7ei4',
+  'accept' => 'text/*',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'safe_thumb.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->uploadImg[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
