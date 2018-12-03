@@ -4,7 +4,7 @@ use think\Model;
 class Cat extends Model
 {
     public function getCateTree() {
-        $catlist = $this->order('id desc')->select();
+        $catlist = $this->order('sort desc')->select();
         return $this->getCate($catlist);
     }
 

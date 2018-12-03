@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1543820049;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1543829849;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -223,13 +223,14 @@
         </button>
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
+                <form action="<?php echo url('cate/sort_del'); ?>" method="post">
                 <div class="widget">
                     <div class="widget-body">
                         <div class="flip-scroll">
                             <table class="table table-bordered table-hover">
                                 <thead class="">
                                    <tr>
-                                        <th style="width:2%;" class="text-center"><label><input class="colored-blue" type="checkbox"><span class="text"></span></label></th>
+                                        <th style="width:2%;" class="text-center"><label><input id="checkall" type="checkbox"><span class="text"></span></label></th>
                                         <th class="text-center" style="width:2%">ID</th>
                                         <th class="text-center" style="width:8%">栏目</th>
                                         <th class="text-center" style="width:2%">状态</th>
@@ -242,13 +243,13 @@
                                 <tbody>
                                     <?php if(is_array($catlist) || $catlist instanceof \think\Collection || $catlist instanceof \think\Paginator): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cat): $mod = ($i % 2 );++$i;?>
                                     <tr>
-                                        <td align="center"><label><input  class="colored-blue" type="checkbox"><span class="text"></span></label></td>
+                                        <td align="center"><label><input name="item[]"  class="colored-blue" type="checkbox" value="<?php echo $cat['id']; ?>"><span class="text"></span></label></td>
                                         <td align="center"><?php echo $cat['id']; ?></td>
                                         <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;"><?php echo $cat['cate_name']; ?></a></td>
                                         <td align="center"><button catid="<?php echo $cat['id']; ?>" onclick="changestatus(this);" class="btn <?php if($cat['status'] == 1): ?>btn-info<?php else: ?>btn-danger<?php endif; ?>" type="button"><?php echo !empty($cat['status'])?'显示':'隐藏'; ?></button></td>
                                         <td align="center"><?php if($cat['cat_attr'] == 1): ?>列表栏目<?php else: ?>频道栏目<?php endif; ?></td>
                                         <td align="center">test</td>
-                                        <td align="center"><input type="text" name="sort" value="<?php echo $cat['sort']; ?>" style="width:40px;text-align:center;"></td>
+                                        <td align="center"><input type="text" name="sort[<?php echo $cat['id']; ?>]" value="<?php echo $cat['sort']; ?>" style="width:40px;text-align:center;"></td>
                                         <td align="center">
                                             <a href="/admin/user/edit/id/6.html" class="btn btn-primary btn-sm shiny">
                                                 <i class="fa fa-edit"></i> 编辑
@@ -261,11 +262,18 @@
                                     <?php endforeach; endif; else: echo "" ;endif; ?>
                                 </tbody>
                             </table>
+                            <div class="row" style="margin-top:10px;">
+                                <div class="col-md-1 col-md-offset-11"><button type="submit" class="btn btn-default">更新分类</button></div>
+                            </div>
                         </div>
                         <div>
                         </div>
                     </div>
+                   
                 </div>
+                </form>
+                
+
             </div>
         </div>
     
@@ -300,5 +308,13 @@
             })
             
         }
+
+        $('#checkall').click(function() {
+            if ($('.colored-blue').prop('checked')) {
+                $('.colored-blue').prop('checked',false);
+            } else {
+                $('.colored-blue').prop('checked',true);
+            }
+        })
     </script>
 </body></html>

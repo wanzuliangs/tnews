@@ -63,4 +63,18 @@ class Cate extends Common
             }
         }
     }
+
+    /**
+     * 分类排序、批量删除分类
+     * @return [type] [description]
+     */
+    public function sort_del()
+    {
+        $data = input('post.');
+        // 更新分类排序
+        foreach ($data['sort'] as $k => $v) {
+            db('cat')->where('id',$k)->update(['sort'=>$v]);
+        }
+        $this->success('更新成功!',url('index'));
+    }
 }

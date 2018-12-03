@@ -50,13 +50,14 @@
         </button>
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
+                <form action="{:url('cate/sort_del')}" method="post">
                 <div class="widget">
                     <div class="widget-body">
                         <div class="flip-scroll">
                             <table class="table table-bordered table-hover">
                                 <thead class="">
                                    <tr>
-                                        <th style="width:2%;" class="text-center"><label><input class="colored-blue" type="checkbox"><span class="text"></span></label></th>
+                                        <th style="width:2%;" class="text-center"><label><input id="checkall" type="checkbox"><span class="text"></span></label></th>
                                         <th class="text-center" style="width:2%">ID</th>
                                         <th class="text-center" style="width:8%">栏目</th>
                                         <th class="text-center" style="width:2%">状态</th>
@@ -69,13 +70,13 @@
                                 <tbody>
                                     {volist name="catlist" id="cat"}
                                     <tr>
-                                        <td align="center"><label><input  class="colored-blue" type="checkbox"><span class="text"></span></label></td>
+                                        <td align="center"><label><input name="item[]"  class="colored-blue" type="checkbox" value="{$cat['id']}"><span class="text"></span></label></td>
                                         <td align="center">{$cat.id}</td>
                                         <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;">{$cat.cate_name}</a></td>
                                         <td align="center"><button catid="{$cat.id}" onclick="changestatus(this);" class="btn {if condition="$cat.status eq 1"}btn-info{else /}btn-danger{/if}" type="button">{$cat.status?'显示':'隐藏'}</button></td>
                                         <td align="center">{if condition="$cat.cat_attr eq 1"}列表栏目{else /}频道栏目{/if}</td>
                                         <td align="center">test</td>
-                                        <td align="center"><input type="text" name="sort" value="{$cat.sort}" style="width:40px;text-align:center;"></td>
+                                        <td align="center"><input type="text" name="sort[{$cat['id']}]" value="{$cat.sort}" style="width:40px;text-align:center;"></td>
                                         <td align="center">
                                             <a href="/admin/user/edit/id/6.html" class="btn btn-primary btn-sm shiny">
                                                 <i class="fa fa-edit"></i> 编辑
@@ -88,11 +89,18 @@
                                     {/volist}
                                 </tbody>
                             </table>
+                            <div class="row" style="margin-top:10px;">
+                                <div class="col-md-1 col-md-offset-11"><button type="submit" class="btn btn-default">更新分类</button></div>
+                            </div>
                         </div>
                         <div>
                         </div>
                     </div>
+                   
                 </div>
+                </form>
+                
+
             </div>
         </div>
     
@@ -127,5 +135,13 @@
             })
             
         }
+
+        $('#checkall').click(function() {
+            if ($('.colored-blue').prop('checked')) {
+                $('.colored-blue').prop('checked',false);
+            } else {
+                $('.colored-blue').prop('checked',true);
+            }
+        })
     </script>
 </body></html>
