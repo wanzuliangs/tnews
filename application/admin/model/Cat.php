@@ -8,7 +8,7 @@ class Cat extends Model
         return $this->getCate($catlist);
     }
 
-    public function getCate($data,$pid=0,$lev=1) {
+    public function getCate($data,$pid=0,$lev=0) {
         static $arr = array();
         foreach ($data as $v) {
             if ($v['pid'] == $pid) {

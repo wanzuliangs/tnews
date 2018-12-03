@@ -5,7 +5,10 @@ class Cate extends Common
 {
     public function index()
     {
-
+        // 获取栏目
+        $catlist = model('cat')->getCateTree();
+        // dump(collection($catlist)->toArray());die;
+        $this->assign('catlist',$catlist);
         return view();
     }
 
@@ -38,6 +41,26 @@ class Cate extends Common
             echo $info->getSaveName();
         } else {
             echo $file->getError();
+        }
+    }
+
+    /**
+     * ajax改变栏目属性显示或隐藏
+     * @return [type] [description]
+     */
+    public function changestatus()
+    {
+        if (request()->isAjax()) {
+            $catid = input('catid');
+            $status = db('cat')->field('status')->where('id',$catid)->find();
+            $sta = $status['status'];
+            if ($sta == 0) {
+                $res = db('cat')->where('id',$catid)->update(['status'=>1]);
+                echo '1'; // 隐藏变为显示
+            } elseif ($sta == 1) {
+                $res = db('cat')->where('id',$catid)->update(['status'=>0]);
+                echo '2'; // 显示变为隐藏
+            }
         }
     }
 }
