@@ -26,7 +26,6 @@ class Cate extends Common
         }
         // 获取栏目
         $catlist = model('cat')->getCateTree();
-        //dump(collection($catlist)->toArray());die;
         $this->assign('catlist',$catlist);
     	return view();
     }
@@ -71,10 +70,26 @@ class Cate extends Common
     public function sort_del()
     {
         $data = input('post.');
+        $res = model('cat')->pdel($data);
+        $this->success('批量删除成功!',url('index'));
         // 更新分类排序
-        foreach ($data['sort'] as $k => $v) {
-            db('cat')->where('id',$k)->update(['sort'=>$v]);
+        // foreach ($data['sort'] as $k => $v) {
+        //     db('cat')->where('id',$k)->update(['sort'=>$v]);
+        // }
+        // $this->success('更新成功!',url('index'));
+    }
+
+    public function delete()
+    {
+        $id = input('id');
+        // 得到当前分类子分类的id
+        $catChildrenIds = model('cat')->getChildrenIds($id);
+        $catChildrenIds[] = $id;
+        $res = db('cat')->delete($catChildrenIds);
+        if ($res) {
+            $this->success('删除分类成功!',url('index'));
+        } else {
+            $this->error('删除分类失败!');
         }
-        $this->success('更新成功!',url('index'));
     }
 }

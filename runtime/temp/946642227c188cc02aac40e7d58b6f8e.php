@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1543829849;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1543914778;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -254,7 +254,7 @@
                                             <a href="/admin/user/edit/id/6.html" class="btn btn-primary btn-sm shiny">
                                                 <i class="fa fa-edit"></i> 编辑
                                             </a>
-                                            <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/6.html')" class="btn btn-danger btn-sm shiny">
+                                            <a href="#" onClick="warning('确实要删除吗', '<?php echo url('cate/delete',array('id'=>$cat['id'])); ?>')" class="btn btn-danger btn-sm shiny">
                                                 <i class="fa fa-trash-o"></i> 删除
                                             </a>
                                         </td>
@@ -263,7 +263,7 @@
                                 </tbody>
                             </table>
                             <div class="row" style="margin-top:10px;">
-                                <div class="col-md-1 col-md-offset-11"><button type="submit" class="btn btn-default">更新分类</button></div>
+                                <div class="col-md-1 col-md-offset-8"><button type="submit" class="btn btn-default">批量删除分类</button></div>
                             </div>
                         </div>
                         <div>

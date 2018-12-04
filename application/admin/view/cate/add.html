@@ -114,7 +114,7 @@
                                         <select name="pid">
                                             <option value="0">顶级栏目</option>
                                             {volist name="catlist" id="cat"}
-                                            <option value="{$cat['id']}">{$cat['cate_name']}</option>
+                                            <option value="{$cat['id']}"><?php echo str_repeat('-',$cat['lev']*8) ?>{$cat['cate_name']}</option>
                                             {/volist}
                                         </select>
                                     </div>
