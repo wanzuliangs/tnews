@@ -20,6 +20,9 @@
     <!-- <link href="__ADMIN__/plus/uploadify/uploadify.css" rel="stylesheet"> -->
     <script src="__ADMIN__/style/jquery_002.js"></script>
     <script src="__ADMIN__/plus/uploadify/jquery.uploadify.min.js"></script>
+    <script src="__ADMIN__/plus/ueditor/ueditor.config.js"></script>
+    <script src="__ADMIN__/plus/ueditor/ueditor.all.min.js"></script>
+    <script src="__ADMIN__/plus/ueditor/lang/zh-cn/zh-cn.js"></script>
     <script>
         $(function () {
             $("#uploadify").uploadify({
@@ -225,7 +228,7 @@
                             </div>
                             <div class="tab-pane" id="FlatTab-3">
                                 <div class="widget-main no-padding">
-                                    <textarea name="content" id="summernote" class="form-control"></textarea>
+                                    <textarea name="content" id="content"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -252,11 +255,10 @@
     <script src="__ADMIN__/style/bootstrap.js"></script>
     <!--Beyond Scripts-->
     <script src="__ADMIN__/style/beyond.js"></script>
-     <script src="__ADMIN__/style/summernote.js"></script>
+  
     <script>
-        $('#summernote').summernote({ height: 300 });
+        UE.getEditor('content',{initiaFrameWidth:1500,initialFremeHeight:400,})
     </script>
-    
 
 
 </body></html>

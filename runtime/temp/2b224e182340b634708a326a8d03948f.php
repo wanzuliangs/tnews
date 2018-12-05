@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:91:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html";i:1543914645;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:91:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html";i:1544005783;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -21,6 +21,9 @@
     <!-- <link href="/tnews/public/static/admin/plus/uploadify/uploadify.css" rel="stylesheet"> -->
     <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
     <script src="/tnews/public/static/admin/plus/uploadify/jquery.uploadify.min.js"></script>
+    <script src="/tnews/public/static/admin/plus/ueditor/ueditor.config.js"></script>
+    <script src="/tnews/public/static/admin/plus/ueditor/ueditor.all.min.js"></script>
+    <script src="/tnews/public/static/admin/plus/ueditor/lang/zh-cn/zh-cn.js"></script>
     <script>
         $(function () {
             $("#uploadify").uploadify({
@@ -398,7 +401,7 @@
                             </div>
                             <div class="tab-pane" id="FlatTab-3">
                                 <div class="widget-main no-padding">
-                                    <textarea name="content" id="summernote" class="form-control"></textarea>
+                                    <textarea name="content" id="content"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -425,11 +428,10 @@
     <script src="/tnews/public/static/admin/style/bootstrap.js"></script>
     <!--Beyond Scripts-->
     <script src="/tnews/public/static/admin/style/beyond.js"></script>
-     <script src="/tnews/public/static/admin/style/summernote.js"></script>
+  
     <script>
-        $('#summernote').summernote({ height: 300 });
+        UE.getEditor('content',{initiaFrameWidth:1500,initialFremeHeight:400,})
     </script>
-    
 
 
 </body></html>
