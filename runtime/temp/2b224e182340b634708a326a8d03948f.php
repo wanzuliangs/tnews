@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:91:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html";i:1544005783;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:91:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\add.html";i:1544006954;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -430,7 +430,7 @@
     <script src="/tnews/public/static/admin/style/beyond.js"></script>
   
     <script>
-        UE.getEditor('content',{initiaFrameWidth:1500,initialFremeHeight:400,})
+        UE.getEditor('content',{initialFrameWidth:1400,initialFrameHeight:400,})
     </script>
 
 
