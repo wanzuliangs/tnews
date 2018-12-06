@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1543914778;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1544063115;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -245,16 +245,18 @@
                                     <tr>
                                         <td align="center"><label><input name="item[]"  class="colored-blue" type="checkbox" value="<?php echo $cat['id']; ?>"><span class="text"></span></label></td>
                                         <td align="center"><?php echo $cat['id']; ?></td>
-                                        <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;"><?php echo $cat['cate_name']; ?></a></td>
+                                        <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;"><?php echo $cat['cate_name']; ?></a><button type="button" style="float:right;" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onclick="javascript:window.location.href='<?php echo url('add',array('id'=>$cat['id'])); ?>'">
+             添加栏目
+        </button></td>
                                         <td align="center"><button catid="<?php echo $cat['id']; ?>" onclick="changestatus(this);" class="btn <?php if($cat['status'] == 1): ?>btn-info<?php else: ?>btn-danger<?php endif; ?>" type="button"><?php echo !empty($cat['status'])?'显示':'隐藏'; ?></button></td>
                                         <td align="center"><?php if($cat['cat_attr'] == 1): ?>列表栏目<?php else: ?>频道栏目<?php endif; ?></td>
                                         <td align="center">test</td>
                                         <td align="center"><input type="text" name="sort[<?php echo $cat['id']; ?>]" value="<?php echo $cat['sort']; ?>" style="width:40px;text-align:center;"></td>
                                         <td align="center">
-                                            <a href="/admin/user/edit/id/6.html" class="btn btn-primary btn-sm shiny">
+                                            <a href="<?php echo url('edit',array('id'=>$cat['id'])); ?>" class="btn btn-primary btn-sm shiny">
                                                 <i class="fa fa-edit"></i> 编辑
                                             </a>
-                                            <a href="#" onClick="warning('确实要删除吗', '<?php echo url('cate/delete',array('id'=>$cat['id'])); ?>')" class="btn btn-danger btn-sm shiny">
+                                            <a href="javascript:;" onClick="warning('确实要删除吗', '<?php echo url('cate/delete',array('id'=>$cat['id'])); ?>')" class="btn btn-danger btn-sm shiny">
                                                 <i class="fa fa-trash-o"></i> 删除
                                             </a>
                                         </td>

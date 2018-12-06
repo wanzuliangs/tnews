@@ -24,10 +24,52 @@ class Cate extends Common
             }
             return;
         }
+        $id = input('id');
         // 获取栏目
         $catlist = model('cat')->getCateTree();
-        $this->assign('catlist',$catlist);
+        // 获取当前栏目上级栏目
+        $catinfo = db('cat')->where('id',$id)->find();
+        // $this->assign('catlist',$catlist);
+        $this->assign(array(
+                'catlist'=>$catlist,
+                'catinfo'=>$catinfo,
+            ));
     	return view();
+    }
+
+    public function edit()
+    {
+        if (request()->isPost()) {
+           $data = input('post.');
+           if (empty($data['img'])) {
+                unset($data['img']);
+           }
+           $childrenIds = model('cat')->getChildrenIds($data['id']);
+           $childrenIds[] = $data['id'];
+           $pid = $data['pid'];
+           if (in_array($pid,$childrenIds)) {
+               $this->error('所选择的栏目不能为当前栏目id或当前栏目子栏目id');
+           } else {
+               $res = db('cat')->update($data);
+               if ($res) {
+                    $this->success('栏目修改成功!',url('index'));
+               } else {
+                    $this->error('栏目修改失败!');
+               }
+           }
+
+
+        }
+        $id = input('id');
+        // 获取栏目树
+        $catlist = model('cat')->getCateTree();
+        // 获取当前栏目
+        $catinfo = db('cat')->where('id',$id)->find();
+        $this->assign(array(
+                'catlist'=>$catlist,
+                'catinfo'=>$catinfo,
+            ));
+        return view();
     }
 
     public function uploadImg()

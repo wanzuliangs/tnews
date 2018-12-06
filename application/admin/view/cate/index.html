@@ -72,16 +72,18 @@
                                     <tr>
                                         <td align="center"><label><input name="item[]"  class="colored-blue" type="checkbox" value="{$cat['id']}"><span class="text"></span></label></td>
                                         <td align="center">{$cat.id}</td>
-                                        <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;">{$cat.cate_name}</a></td>
+                                        <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;">{$cat.cate_name}</a><button type="button" style="float:right;" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onclick="javascript:window.location.href='{:url('add',array('id'=>$cat.id))}'">
+             添加栏目
+        </button></td>
                                         <td align="center"><button catid="{$cat.id}" onclick="changestatus(this);" class="btn {if condition="$cat.status eq 1"}btn-info{else /}btn-danger{/if}" type="button">{$cat.status?'显示':'隐藏'}</button></td>
                                         <td align="center">{if condition="$cat.cat_attr eq 1"}列表栏目{else /}频道栏目{/if}</td>
                                         <td align="center">test</td>
                                         <td align="center"><input type="text" name="sort[{$cat['id']}]" value="{$cat.sort}" style="width:40px;text-align:center;"></td>
                                         <td align="center">
-                                            <a href="/admin/user/edit/id/6.html" class="btn btn-primary btn-sm shiny">
+                                            <a href="{:url('edit',array('id'=>$cat['id']))}" class="btn btn-primary btn-sm shiny">
                                                 <i class="fa fa-edit"></i> 编辑
                                             </a>
-                                            <a href="#" onClick="warning('确实要删除吗', '{:url('cate/delete',array('id'=>$cat.id))}')" class="btn btn-danger btn-sm shiny">
+                                            <a href="javascript:;" onClick="warning('确实要删除吗', '{:url('cate/delete',array('id'=>$cat.id))}')" class="btn btn-danger btn-sm shiny">
                                                 <i class="fa fa-trash-o"></i> 删除
                                             </a>
                                         </td>
