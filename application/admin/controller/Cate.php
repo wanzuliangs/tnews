@@ -51,7 +51,7 @@ class Cate extends Common
                $this->error('所选择的栏目不能为当前栏目id或当前栏目子栏目id');
            } else {
                $res = db('cat')->update($data);
-               if ($res) {
+               if ($res!==false) {
                     $this->success('栏目修改成功!',url('index'));
                } else {
                     $this->error('栏目修改失败!');
