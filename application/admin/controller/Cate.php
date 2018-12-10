@@ -134,4 +134,15 @@ class Cate extends Common
             $this->error('删除分类失败!');
         }
     }
+
+    /**
+     * 栏目收缩
+     * @return [type] [description]
+     */
+    public function shrink()
+    {
+        $id = input('post.id');
+        $childIds = model('cat')->getChildrenIds($id);
+        echo json_encode($childIds);
+    }
 }

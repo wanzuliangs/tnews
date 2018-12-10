@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1544063115;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\cate\index.html";i:1544431329;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1543631803;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -18,7 +18,9 @@
     <link href="/tnews/public/static/admin/style/demo.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/typicons.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/animate.css" rel="stylesheet">
-    
+    <style>
+        .open {padding:2px 3px;border: 1px solid #999;cursor: pointer;}
+    </style>    
 </head>
 <body>
     <!-- 头部 -->
@@ -229,7 +231,8 @@
                         <div class="flip-scroll">
                             <table class="table table-bordered table-hover">
                                 <thead class="">
-                                   <tr>
+                                   <tr pid="0">
+                                        <th class="text-center" style="width:2%">展开</th>
                                         <th style="width:2%;" class="text-center"><label><input id="checkall" type="checkbox"><span class="text"></span></label></th>
                                         <th class="text-center" style="width:2%">ID</th>
                                         <th class="text-center" style="width:8%">栏目</th>
@@ -242,7 +245,8 @@
                                 </thead>
                                 <tbody>
                                     <?php if(is_array($catlist) || $catlist instanceof \think\Collection || $catlist instanceof \think\Paginator): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cat): $mod = ($i % 2 );++$i;?>
-                                    <tr>
+                                    <tr id="<?php echo $cat['id']; ?>" pid="<?php echo $cat['pid']; ?>">
+                                        <td align="center"><span  class="open">+</span></td>
                                         <td align="center"><label><input name="item[]"  class="colored-blue" type="checkbox" value="<?php echo $cat['id']; ?>"><span class="text"></span></label></td>
                                         <td align="center"><?php echo $cat['id']; ?></td>
                                         <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;"><?php echo $cat['cate_name']; ?></a><button type="button" style="float:right;" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onclick="javascript:window.location.href='<?php echo url('add',array('id'=>$cat['id'])); ?>'">
@@ -318,5 +322,43 @@
                 $('.colored-blue').prop('checked',true);
             }
         })
+
+        $(function() {
+            $('tr[pid!="0"]').hide();
+            $('.open').click(function() {
+                var id = $(this).parent().parent().attr('id');
+                if ($(this).text() == '+') {
+                    $(this).text('-');
+                    $('tr[pid="' + id +'"]').show();
+                } else{
+                    $(this).text('+');
+                    $.ajax({
+                        url: '<?php echo url("cate/shrink"); ?>',
+                        type: 'post',
+                        dataType: 'json',
+                        data: {id: id},
+                        success: function(data) {
+                            // console.log(data);
+                            var idsobj = $('tr[pid!=0]');
+                            var cids = [];
+
+                            idsobj.each(function(k,v){
+                                // cids.push(v.id);
+                                cids.push(v.id);
+                            });
+
+                            $.each(data,function(k,v) {
+                                if ($.inArray(v, cids)) {
+                                    $('tr[id="'+ v + '"]').hide();
+                                    $('tr[id="'+ v + '"]').find('.open').text('+');
+                                }
+                            });
+                        }
+                    })
+                    
+                }
+            });
+        })
+
     </script>
 </body></html>

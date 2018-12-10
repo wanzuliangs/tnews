@@ -17,7 +17,9 @@
     <link href="__ADMIN__/style/demo.css" rel="stylesheet">
     <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
     <link href="__ADMIN__/style/animate.css" rel="stylesheet">
-    
+    <style>
+        .open {padding:2px 3px;border: 1px solid #999;cursor: pointer;}
+    </style>    
 </head>
 <body>
     <!-- 头部 -->
@@ -56,7 +58,8 @@
                         <div class="flip-scroll">
                             <table class="table table-bordered table-hover">
                                 <thead class="">
-                                   <tr>
+                                   <tr pid="0">
+                                        <th class="text-center" style="width:2%">展开</th>
                                         <th style="width:2%;" class="text-center"><label><input id="checkall" type="checkbox"><span class="text"></span></label></th>
                                         <th class="text-center" style="width:2%">ID</th>
                                         <th class="text-center" style="width:8%">栏目</th>
@@ -69,7 +72,8 @@
                                 </thead>
                                 <tbody>
                                     {volist name="catlist" id="cat"}
-                                    <tr>
+                                    <tr id="{$cat.id}" pid="{$cat.pid}">
+                                        <td align="center"><span  class="open">+</span></td>
                                         <td align="center"><label><input name="item[]"  class="colored-blue" type="checkbox" value="{$cat['id']}"><span class="text"></span></label></td>
                                         <td align="center">{$cat.id}</td>
                                         <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;">{$cat.cate_name}</a><button type="button" style="float:right;" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onclick="javascript:window.location.href='{:url('add',array('id'=>$cat.id))}'">
@@ -145,5 +149,43 @@
                 $('.colored-blue').prop('checked',true);
             }
         })
+
+        $(function() {
+            $('tr[pid!="0"]').hide();
+            $('.open').click(function() {
+                var id = $(this).parent().parent().attr('id');
+                if ($(this).text() == '+') {
+                    $(this).text('-');
+                    $('tr[pid="' + id +'"]').show();
+                } else{
+                    $(this).text('+');
+                    $.ajax({
+                        url: '{:url("cate/shrink")}',
+                        type: 'post',
+                        dataType: 'json',
+                        data: {id: id},
+                        success: function(data) {
+                            // console.log(data);
+                            var idsobj = $('tr[pid!=0]');
+                            var cids = [];
+
+                            idsobj.each(function(k,v){
+                                // cids.push(v.id);
+                                cids.push(v.id);
+                            });
+
+                            $.each(data,function(k,v) {
+                                if ($.inArray(v, cids)) {
+                                    $('tr[id="'+ v + '"]').hide();
+                                    $('tr[id="'+ v + '"]').find('.open').text('+');
+                                }
+                            });
+                        }
+                    })
+                    
+                }
+            });
+        })
+
     </script>
 </body></html>
