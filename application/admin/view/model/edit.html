@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>ThinkPHP5.0</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__ADMIN__/style/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/style/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/style/demo.css" rel="stylesheet">
+    <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
+    <link href="__ADMIN__/style/animate.css" rel="stylesheet">
+    
+</head>
+<body>
+	<!-- 头部 -->
+            {include file="common/head"}
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            {include file="common/left"}
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                     
+                                        <li>
+                        <a href="#">模块管理</a>
+                    </li>
+                                        <li class="active">编辑模块</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">编辑模块</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post">
+                        <input type="hidden" name="id" value="{$modelInfo.id?$modelInfo.id:''}">
+                        <input type="hidden" id="oldtablename" name="oldtablename" value="{$modelInfo.tablename?$modelInfo.tablename:''}">
+                        <div class="form-group">
+                            <label for="modelname" class="col-sm-2 control-label no-padding-right">模块名称</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="modelname" placeholder="" name="modelname" required="" type="text" value="{$modelInfo.modelname?$modelInfo.modelname:''}">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tablename" class="col-sm-2 control-label no-padding-right">附加表名</label>
+                            <div class="col-sm-6">
+                               <input class="form-control" id="tablename" placeholder="" name="tablename" required="" type="text" value="{$modelInfo.tablename?$modelInfo.tablename:''}">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>  
+                        <div class="form-group">
+                            <label for="status" class="col-sm-2 control-label no-padding-right">是否显示</label>
+                            <div class="col-sm-6">
+                               <div class="row">
+                                   <div class="radio col-md-2">
+                                       <label>
+                                           <input {if condition="$modelInfo.status eq 1"}checked="checked"{/if} class="colored-blue" name="status" type="radio" value="1">                               
+                                           <span class="text">显示</span>
+                                       </label>
+                                   </div>
+                                   <div class="radio col-md-2">
+                                       <label>
+                                           <input class="colored-blue" name="status" type="radio" value="0" {if condition="$modelInfo.status eq 0"}checked="checked"{/if}>                               
+                                           <span class="text">隐藏</span>
+                                       </label>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>  
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input onclick="addModel()" type="button" class="btn btn-default" value="保存信息">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+	    <!--Basic Scripts-->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/plus/layer/layer.js"></script>
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+    
+</body>
+<script>
+    function addModel()
+    {
+        var modelname = $.trim($('#modelname').val());
+        if (modelname == '') {
+            layer.open({
+              content: '模块名不能为空!',
+              time: 2000,
+              yes: function(index, layero){
+                layer.close(index);
+              }
+            });        
+            return;
+        }
+
+        var tablename = $.trim($('#tablename').val());
+        if (tablename == '') {
+            layer.open({
+              content: '附加表名不能为空!',
+              time: 2000,
+              yes: function(index, layero){
+                layer.close(index);
+              }
+            });        
+            return;
+        }
+
+        var status = $('input:radio[name="status"]:checked').val();
+
+        var id = $('input[type="hidden"]').val();
+        var oldtablename = $('#oldtablename').val();
+        $.post('{:url("model/edit")}', {'modelname':modelname, 'tablename': tablename, 'status': status, 'id': id, 'oldtablename': oldtablename}, function(res) {
+            layer.open({
+              title: '提示'
+              ,content: res.msg
+            });     
+
+            if (res.code == 0) {
+                setTimeout(function(){
+                    window.location.reload();
+                }, 800)
+            }
+        },'json');
+
+    }
+</script>
+</html>

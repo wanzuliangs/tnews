@@ -90,6 +90,30 @@
                         </ul>                            
                     </li> 
 
+                     <li {if condition="$contrname eq 'Cate'"}class="open"{/if}>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa  fa-tasks"></i>
+                            <span class="menu-text">模块管理</span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:url('model/index')}">
+                                    <span class="menu-text">
+                                        模块列表                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('model/add')}">
+                                    <span class="menu-text">
+                                        模块添加                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                        </ul>                            
+                    </li> 
+
                     <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-gear"></i>

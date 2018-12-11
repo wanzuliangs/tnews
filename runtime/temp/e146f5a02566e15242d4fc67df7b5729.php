@@ -1,8 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\index\index.html";i:1543369987;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1544508600;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\model\index.html";i:1544516807;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1544508600;}*/ ?>
+
 <!DOCTYPE html>
 <html><head>
-    <meta charset="utf-8">
+	    <meta charset="utf-8">
     <title>ThinkPHP5.0</title>
+
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +13,17 @@
     <link href="/tnews/public/static/admin/style/bootstrap.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/font-awesome.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/weather-icons.css" rel="stylesheet">
+
     <!--Beyond styles-->
     <link id="beyond-link" href="/tnews/public/static/admin/style/beyond.css" rel="stylesheet" type="text/css">
     <link href="/tnews/public/static/admin/style/demo.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/typicons.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/animate.css" rel="stylesheet">
-
+    
 </head>
 <body>
-    <!-- 头部 -->
+	<!-- 头部 -->
+	<!-- 头部 -->
     <div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
@@ -79,9 +83,11 @@
 </div>
 
     <!-- /头部 -->
-    <div class="main-container container-fluid">
-        <div class="page-container">
-            <!-- Page Sidebar -->
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
             <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
@@ -226,29 +232,87 @@
                 <!-- Page Breadcrumb -->
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
-                        <li class="active">控制面板</li>
-                    </ul>
+                                        <li>
+                        <a href="#">模块管理</a>
+                    </li>
+                                        <li class="active">模块列表</li>
+                                        </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
+
                 <!-- Page Body -->
                 <div class="page-body">
-
-                    <div style="text-align:center; line-height:1000%; font-size:24px;">
-                        大型cms系统<br>
-                    </div>
+                    
+<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url("model/add"); ?>'"> <i class="fa fa-plus"></i> Add
+</button>
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-body">
+                <div class="flip-scroll">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr>
+                                <th class="text-center">模块ID</th>
+                                <th class="text-center">模块名称</th>
+                                <th class="text-center">附加表名称</th>
+                                <th class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<?php if(is_array($model_list) || $model_list instanceof \think\Collection || $model_list instanceof \think\Paginator): $i = 0; $__LIST__ = $model_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$model): $mod = ($i % 2 );++$i;?>
+                        	<tr>
+                        		<td align="center"><?php echo $model['id']; ?></td>
+                        		<td align="center"><?php echo $model['modelname']; ?></td>
+                        		<td align="center"><?php echo $model['tablename']; ?></td>
+                        		<td align="center">
+                        			<a href="<?php echo url('model/edit',array('id'=>$model['id'])); ?>" class="btn btn-primary btn-sm shiny"> <i class="fa fa-edit"></i>
+                        				编辑
+                        			</a>
+                        			<a href="#" onClick="delModel(<?php echo $model['id']; ?>)" class="btn btn-danger btn-sm shiny"> <i class="fa fa-trash-o"></i>
+                        				删除
+                        			</a>
+                        		</td>
+                        	</tr>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                        </tbody>
+                    </table>
                 </div>
-
+                <div>
+                	                </div>
             </div>
-            <!-- /Page Body -->
         </div>
-        <!-- /Page Content -->
     </div>
 </div>
-<!--Basic Scripts-->
-<script src="/tnews/public/static/admin/style/jquery_002.js"></script>
-<script src="/tnews/public/static/admin/style/bootstrap.js"></script>
-<script src="/tnews/public/static/admin/style/jquery.js"></script>
-<!--Beyond Scripts-->
-<script src="/tnews/public/static/admin/style/beyond.js"></script>
 
-</body></html>
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
+    <script src="/tnews/public/static/admin/style/bootstrap.js"></script>
+    <script src="/tnews/public/static/admin/plus/layer/layer.js"></script>
+    <!--Beyond Scripts-->
+    <script src="/tnews/public/static/admin/style/beyond.js"></script>
+</body>
+<script>
+   function delModel(id)
+   {
+        $.post('<?php echo url("model/delete"); ?>', {'id': id}, function(res) {
+            layer.open({
+              title: '提示',
+              content: res.msg
+            });     
+           if (res.code == 0) {
+                setTimeout(function(){
+                    window.location.reload();
+                }, 800)
+           };
+        },'json');
+   } 
+</script>
+</html>

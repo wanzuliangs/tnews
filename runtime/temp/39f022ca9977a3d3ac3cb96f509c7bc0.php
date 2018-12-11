@@ -1,8 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\index\index.html";i:1543369987;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1544508600;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\web\WWW\tnews\public/../application/admin\view\model\edit.html";i:1544522547;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\head.html";i:1543367187;s:84:"C:\Users\Administrator\Desktop\web\WWW\tnews\application\admin\view\common\left.html";i:1544508600;}*/ ?>
 <!DOCTYPE html>
 <html><head>
-    <meta charset="utf-8">
+	    <meta charset="utf-8">
     <title>ThinkPHP5.0</title>
+
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +12,17 @@
     <link href="/tnews/public/static/admin/style/bootstrap.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/font-awesome.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/weather-icons.css" rel="stylesheet">
+
     <!--Beyond styles-->
     <link id="beyond-link" href="/tnews/public/static/admin/style/beyond.css" rel="stylesheet" type="text/css">
     <link href="/tnews/public/static/admin/style/demo.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/typicons.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/animate.css" rel="stylesheet">
-
+    
 </head>
 <body>
-    <!-- 头部 -->
+	<!-- 头部 -->
+            <!-- 头部 -->
     <div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
@@ -79,9 +82,11 @@
 </div>
 
     <!-- /头部 -->
-    <div class="main-container container-fluid">
-        <div class="page-container">
-            <!-- Page Sidebar -->
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
             <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
@@ -226,29 +231,133 @@
                 <!-- Page Breadcrumb -->
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
-                        <li class="active">控制面板</li>
-                    </ul>
+                                     
+                                        <li>
+                        <a href="#">模块管理</a>
+                    </li>
+                                        <li class="active">编辑模块</li>
+                                        </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
+
                 <!-- Page Body -->
                 <div class="page-body">
-
-                    <div style="text-align:center; line-height:1000%; font-size:24px;">
-                        大型cms系统<br>
-                    </div>
-                </div>
-
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">编辑模块</span>
             </div>
-            <!-- /Page Body -->
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post">
+                        <input type="hidden" name="id" value="<?php echo !empty($modelInfo['id'])?$modelInfo['id']:''; ?>">
+                        <input type="hidden" id="oldtablename" name="oldtablename" value="<?php echo !empty($modelInfo['tablename'])?$modelInfo['tablename']:''; ?>">
+                        <div class="form-group">
+                            <label for="modelname" class="col-sm-2 control-label no-padding-right">模块名称</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="modelname" placeholder="" name="modelname" required="" type="text" value="<?php echo !empty($modelInfo['modelname'])?$modelInfo['modelname']:''; ?>">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tablename" class="col-sm-2 control-label no-padding-right">附加表名</label>
+                            <div class="col-sm-6">
+                               <input class="form-control" id="tablename" placeholder="" name="tablename" required="" type="text" value="<?php echo !empty($modelInfo['tablename'])?$modelInfo['tablename']:''; ?>">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>  
+                        <div class="form-group">
+                            <label for="status" class="col-sm-2 control-label no-padding-right">是否显示</label>
+                            <div class="col-sm-6">
+                               <div class="row">
+                                   <div class="radio col-md-2">
+                                       <label>
+                                           <input <?php if($modelInfo['status'] == 1): ?>checked="checked"<?php endif; ?> class="colored-blue" name="status" type="radio" value="1">                               
+                                           <span class="text">显示</span>
+                                       </label>
+                                   </div>
+                                   <div class="radio col-md-2">
+                                       <label>
+                                           <input class="colored-blue" name="status" type="radio" value="0" <?php if($modelInfo['status'] == 0): ?>checked="checked"<?php endif; ?>>                               
+                                           <span class="text">隐藏</span>
+                                       </label>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>  
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input onclick="addModel()" type="button" class="btn btn-default" value="保存信息">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- /Page Content -->
     </div>
 </div>
-<!--Basic Scripts-->
-<script src="/tnews/public/static/admin/style/jquery_002.js"></script>
-<script src="/tnews/public/static/admin/style/bootstrap.js"></script>
-<script src="/tnews/public/static/admin/style/jquery.js"></script>
-<!--Beyond Scripts-->
-<script src="/tnews/public/static/admin/style/beyond.js"></script>
 
-</body></html>
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+	    <!--Basic Scripts-->
+    <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
+    <script src="/tnews/public/static/admin/plus/layer/layer.js"></script>
+    <script src="/tnews/public/static/admin/style/bootstrap.js"></script>
+    <!--Beyond Scripts-->
+    <script src="/tnews/public/static/admin/style/beyond.js"></script>
+    
+</body>
+<script>
+    function addModel()
+    {
+        var modelname = $.trim($('#modelname').val());
+        if (modelname == '') {
+            layer.open({
+              content: '模块名不能为空!',
+              time: 2000,
+              yes: function(index, layero){
+                layer.close(index);
+              }
+            });        
+            return;
+        }
+
+        var tablename = $.trim($('#tablename').val());
+        if (tablename == '') {
+            layer.open({
+              content: '附加表名不能为空!',
+              time: 2000,
+              yes: function(index, layero){
+                layer.close(index);
+              }
+            });        
+            return;
+        }
+
+        var status = $('input:radio[name="status"]:checked').val();
+
+        var id = $('input[type="hidden"]').val();
+        var oldtablename = $('#oldtablename').val();
+        $.post('<?php echo url("model/edit"); ?>', {'modelname':modelname, 'tablename': tablename, 'status': status, 'id': id, 'oldtablename': oldtablename}, function(res) {
+            layer.open({
+              title: '提示'
+              ,content: res.msg
+            });     
+
+            if (res.code == 0) {
+                setTimeout(function(){
+                    window.location.reload();
+                }, 800)
+            }
+        },'json');
+
+    }
+</script>
+</html>

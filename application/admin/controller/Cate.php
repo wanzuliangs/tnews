@@ -65,9 +65,12 @@ class Cate extends Common
         $catlist = model('cat')->getCateTree();
         // 获取当前栏目
         $catinfo = db('cat')->where('id',$id)->find();
+        // 获取模块列表
+        $modelInfo = db('model')->select();
         $this->assign(array(
                 'catlist'=>$catlist,
                 'catinfo'=>$catinfo,
+                'modelInfo'=>$modelInfo,
             ));
         return view();
     }
@@ -141,8 +144,12 @@ class Cate extends Common
      */
     public function shrink()
     {
-        $id = input('post.id');
-        $childIds = model('cat')->getChildrenIds($id);
-        echo json_encode($childIds);
+        if (request()->isAjax()) {
+            $id = input('post.id');
+            $childIds = model('cat')->getChildrenIds($id);
+            echo json_encode($childIds);
+        } else {
+            exit('error!');
+        }
     }
 }
