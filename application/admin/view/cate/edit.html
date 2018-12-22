@@ -56,6 +56,7 @@
     </script>
 </head>
 <body>
+
     <!-- 头部 -->
     {include file="common/head"}
 
@@ -106,8 +107,8 @@
                                     <label for="model_id" class="col-sm-2 control-label no-padding-right">栏目模型</label>
                                     <div class="col-sm-6">
                                         <select name="model_id">
-                                            <option value="1" {if condition="$catinfo eq 1"}selected{/if}>文章模型</option>
-                                            <option value="2" {if condition="$catinfo eq 2"}selected{/if}>电影模型</option>
+                                            <option value="23" {if condition="$catinfo['model_id'] eq 23"}selected{/if}>文章模型</option>
+                                            <option value="24" {if condition="$catinfo['model_id'] eq 24"}selected{/if}>电影模型</option>
                                         </select>
                                     </div>
                                 </div>

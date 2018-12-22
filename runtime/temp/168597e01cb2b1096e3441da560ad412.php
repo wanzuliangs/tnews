@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:92:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\add.html";i:1545484015;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1545483136;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\edit.html";i:1545484904;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1545483136;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -57,6 +57,7 @@
     </script>
 </head>
 <body>
+
     <!-- 头部 -->
     <!-- 头部 -->
     <div class="navbar">
@@ -271,7 +272,7 @@
                                         <li>
                         <a href="#">栏目管理</a>
                     </li>
-                                        <li class="active">添加栏目</li>
+                                        <li class="active">修改栏目</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -282,6 +283,7 @@
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
         <form class="form-horizontal" role="form" enctype="multipart/form-data" method="post">
+            <input type="hidden" name="id" value="<?php echo !empty($catinfo['id'])?$catinfo['id']:0; ?>">
             <div class="widget-body">
                 <div class="widget-main ">
                     <div class="tabbable">
@@ -302,9 +304,8 @@
                                     <label for="model_id" class="col-sm-2 control-label no-padding-right">栏目模型</label>
                                     <div class="col-sm-6">
                                         <select name="model_id">
-                                            <?php if(is_array($model_list) || $model_list instanceof \think\Collection || $model_list instanceof \think\Paginator): $i = 0; $__LIST__ = $model_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$model): $mod = ($i % 2 );++$i;?>
-                                            <option value="<?php echo $model['id']; ?>"><?php echo $model['modelname']; ?></option>
-                                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                                            <option value="23" <?php if($catinfo['model_id'] == 23): ?>selected<?php endif; ?>>文章模型</option>
+                                            <option value="24" <?php if($catinfo['model_id'] == 24): ?>selected<?php endif; ?>>电影模型</option>
                                         </select>
                                     </div>
                                 </div>
@@ -324,7 +325,7 @@
                                 <div class="form-group">
                                     <label for="cate_name" class="col-sm-2 control-label no-padding-right">分类名称</label>
                                     <div class="col-sm-6">
-                                        <input class="form-control" placeholder="" name="cate_name" type="text" value="">
+                                        <input class="form-control" placeholder="" name="cate_name" type="text" value="<?php echo !empty($catinfo['cate_name'])?$catinfo['cate_name']:''; ?>">
                                     </div>
                                     <p class="help-block col-sm-4 red">* 必填</p>
                                 </div>
@@ -333,11 +334,11 @@
                                     <label for="status" class="col-sm-2 control-label no-padding-right">是否显示</label>
                                     <div class="col-sm-6" style="padding-top:4px;">
                                         <label>
-                                            <input class="colored-blue" name="status" type="radio" value="1" checked="checked">
+                                            <input class="colored-blue" name="status" type="radio" value="1" <?php if($catinfo['status'] == 1): ?>checked<?php endif; ?>>
                                             <span class="text"> 是</span>
                                         </label>
                                         <label>
-                                            <input class="colored-blue" name="status" type="radio" value="0">
+                                            <input class="colored-blue" name="status" type="radio" value="0" <?php if($catinfo['status'] == 0): ?>checked<?php endif; ?>>
                                             <span class="text"> 否</span>
                                         </label>
                                     </div>
@@ -347,11 +348,11 @@
                                     <label for="cat_attr" class="col-sm-2 control-label no-padding-right">栏目属性</label>
                                     <div class="col-sm-6" style="padding-top:4px;">
                                         <label>
-                                            <input class="colored-blue" name="cat_attr" type="radio" value="1" checked="checked">
+                                            <input class="colored-blue" name="cat_attr" type="radio" value="1"  <?php if($catinfo['cat_attr'] == 1): ?>checked<?php endif; ?>>
                                             <span class="text"> 栏目</span>
                                         </label>
                                         <label>
-                                            <input class="colored-blue" name="cat_attr" type="radio" value="2">
+                                            <input class="colored-blue" name="cat_attr" type="radio" value="2" <?php if($catinfo['cat_attr'] == 2): ?>checked<?php endif; ?>>
                                             <span class="text"> 频道</span>
                                         </label>
                                     </div>
@@ -370,14 +371,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-4 col-sm-offset-2" id="catimg"></div>
+                                    <div class="col-sm-4 col-sm-offset-2" id="catimg"><?php if($catinfo['img'] != ''): ?><img src="/tnews/public/static/admin/uploads/cateimg/<?php echo $catinfo['img']; ?>" style="height:120px;"><?php endif; ?></div>
                                 </div>
                         
                                 <div class="form-group">
                                     <label for="list_tmp" class="col-sm-2 control-label no-padding-right">列表页模版</label>
                                     <div class="col-sm-6" style="padding-top:4px;">
                                         <label>
-                                            <input class="form-control" placeholder="" name="list_tmp" type="text" value="list_article.htm">
+                                            <input class="form-control" placeholder="" name="list_tmp" type="text" value="<?php echo !empty($catinfo['list_tmp'])?$catinfo['list_tmp']:''; ?>">
                                         </label>
                                     </div>
                                 </div>
@@ -386,7 +387,7 @@
                                     <label for="index_tmp" class="col-sm-2 control-label no-padding-right">频道页模版</label>
                                     <div class="col-sm-6" style="padding-top:4px;">
                                         <label>
-                                            <input class="form-control" placeholder="" name="index_tmp" type="text" value="index_article.htm">
+                                            <input class="form-control" placeholder="" name="index_tmp" type="text" value="<?php echo !empty($catinfo['index_tmp'])?$catinfo['index_tmp']:''; ?>">
                                         </label>
                                     </div>
                                 </div>
@@ -395,7 +396,7 @@
                                     <label for="article_tmp" class="col-sm-2 control-label no-padding-right">内容页模版</label>
                                     <div class="col-sm-6" style="padding-top:4px;">
                                         <label>
-                                            <input class="form-control" placeholder="" name="article_tmp" type="text" value="article_article.htm">
+                                            <input class="form-control" placeholder="" name="article_tmp" type="text" value="<?php echo !empty($catinfo['article_tmp'])?$catinfo['article_tmp']:''; ?>">
                                         </label>
                                     </div>
                                 </div>
@@ -406,32 +407,32 @@
                                 <div class="form-group">
                                     <label for="seotitle" class="col-sm-2 control-label no-padding-right">标题</label>
                                     <div class="col-sm-6">
-                                        <input class="form-control" placeholder="" name="seotitle" type="text" value="">
+                                        <input class="form-control" placeholder="" name="seotitle" type="text" value="<?php echo !empty($catinfo['seotitle'])?$catinfo['seotitle']:''; ?>">
                                     </div>
                                 </div>
                         
                                 <div class="form-group">
                                     <label for="kewords" class="col-sm-2 control-label no-padding-right">关键词</label>
                                     <div class="col-sm-6">
-                                        <input class="form-control" placeholder="" name="kewords" type="text" value="">
+                                        <input class="form-control" placeholder="" name="kewords" type="text" value="<?php echo !empty($catinfo['kewords'])?$catinfo['kewords']:''; ?>">
                                     </div>
                                 </div>
                         
                                 <div class="form-group">
                                     <label for="des" class="col-sm-2 control-label no-padding-right">描述</label>
                                     <div class="col-sm-6">
-                                        <textarea name="des" class="form-control"></textarea>
+                                        <textarea name="des" class="form-control"><?php echo !empty($catinfo['des'])?$catinfo['des']:''; ?></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="FlatTab-3">
                                 <div class="widget-main no-padding">
-                                    <textarea name="content" id="content"></textarea>
+                                    <textarea name="content" id="content"><?php echo !empty($catinfo['content'])?$catinfo['content']:''; ?></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-2 col-md-offset-2">
-                                    <button type="submit" class="btn btn-default">添加分类</button>
+                                    <button type="submit" class="btn btn-default">更改分类</button>
                                 </div>
                             </div>
                         </div>

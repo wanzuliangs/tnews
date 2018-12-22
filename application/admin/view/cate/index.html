@@ -81,7 +81,7 @@
         </button></td>
                                         <td align="center"><button catid="{$cat.id}" onclick="changestatus(this);" class="btn {if condition="$cat.status eq 1"}btn-info{else /}btn-danger{/if}" type="button">{$cat.status?'显示':'隐藏'}</button></td>
                                         <td align="center">{if condition="$cat.cat_attr eq 1"}列表栏目{else /}频道栏目{/if}</td>
-                                        <td align="center">test</td>
+                                        <td align="center">{$cat.modelname}</td>
                                         <td align="center"><input type="text" name="sort[{$cat['id']}]" value="{$cat.sort}" style="width:40px;text-align:center;"></td>
                                         <td align="center">
                                             <a href="{:url('edit',array('id'=>$cat['id']))}" class="btn btn-primary btn-sm shiny">

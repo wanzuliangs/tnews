@@ -7,6 +7,11 @@ class Cate extends Common
     {
         // 获取栏目
         $catlist = model('cat')->getCateTree();
+        foreach ($catlist as $k => $v) {
+            $modelInfo = db('model')->where('id',$v['model_id'])->find();
+            $modelname = $modelInfo['modelname'];
+            $catlist[$k]['modelname'] = $modelname;
+        }
         // dump(collection($catlist)->toArray());die;
         $this->assign('catlist',$catlist);
         return view();
@@ -30,9 +35,13 @@ class Cate extends Common
         // 获取当前栏目上级栏目
         $catinfo = db('cat')->where('id',$id)->find();
         // $this->assign('catlist',$catlist);
+        // 获取模型
+        $model_list = db('model')->select();
+
         $this->assign(array(
                 'catlist'=>$catlist,
                 'catinfo'=>$catinfo,
+                'model_list'=>$model_list,
             ));
     	return view();
     }

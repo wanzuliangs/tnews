@@ -1,8 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html";i:1545485459;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1545483136;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\lst.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1545483136;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
-    <title>ThinkPHP5.0</title>
+    <title>newscms</title>
 
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +18,9 @@
     <link href="/tnews/public/static/admin/style/demo.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/typicons.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/animate.css" rel="stylesheet">
-    <style>
-        .open {padding:2px 3px;border: 1px solid #999;cursor: pointer;}
-    </style>    
+    
 </head>
 <body>
-    <!-- 头部 -->
     <!-- 头部 -->
     <div class="navbar">
     <div class="navbar-inner">
@@ -84,11 +81,11 @@
 </div>
 
     <!-- /头部 -->
-    <!-- /头部 -->
     
     <div class="main-container container-fluid">
         <div class="page-container">
                         <!-- Page Sidebar -->
+            
     <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
@@ -229,87 +226,75 @@
             </div>
             <!-- /Page Sidebar -->
             <!-- Page Content -->
-<div class="page-content">
-    <!-- Page Breadcrumb -->
-    <div class="page-breadcrumbs">
-        <ul class="breadcrumb">
-            <li>
-                <a href="#">栏目管理</a>
-            </li>
-            <li class="active">栏目列表</li>
-        </ul>
-    </div>
-    <!-- /Page Breadcrumb -->
-
-    <!-- Page Body -->
-    <div class="page-body">
-    
-        <button type="button" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href='<?php echo url('cate/add'); ?>'">
-            <i class="fa fa-plus"></i> Add
-        </button>
-        <div class="row">
-            <div class="col-lg-12 col-sm-12 col-xs-12">
-                <form action="<?php echo url('cate/sort_del'); ?>" method="post">
-                <div class="widget">
-                    <div class="widget-body">
-                        <div class="flip-scroll">
-                            <table class="table table-bordered table-hover">
-                                <thead class="">
-                                   <tr pid="0">
-                                        <th class="text-center" style="width:2%">展开</th>
-                                        <th style="width:2%;" class="text-center"><label><input id="checkall" type="checkbox"><span class="text"></span></label></th>
-                                        <th class="text-center" style="width:2%">ID</th>
-                                        <th class="text-center" style="width:8%">栏目</th>
-                                        <th class="text-center" style="width:2%">状态</th>
-                                        <th class="text-center" style="width:6%">属性</th>
-                                        <th class="text-center" style="width:4%">所属模型</th>
-                                        <th class="text-center" style="width:4%">排序</th>
-                                        <th style="width:4%" class="text-center">操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php if(is_array($catlist) || $catlist instanceof \think\Collection || $catlist instanceof \think\Paginator): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cat): $mod = ($i % 2 );++$i;?>
-                                    <tr id="<?php echo $cat['id']; ?>" pid="<?php echo $cat['pid']; ?>">
-                                        <td align="center"><span  class="open">+</span></td>
-                                        <td align="center"><label><input name="item[]"  class="colored-blue" type="checkbox" value="<?php echo $cat['id']; ?>"><span class="text"></span></label></td>
-                                        <td align="center"><?php echo $cat['id']; ?></td>
-                                        <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;"><?php echo $cat['cate_name']; ?></a><button type="button" style="float:right;" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onclick="javascript:window.location.href='<?php echo url('add',array('id'=>$cat['id'])); ?>'">
-             添加栏目
-        </button></td>
-                                        <td align="center"><button catid="<?php echo $cat['id']; ?>" onclick="changestatus(this);" class="btn <?php if($cat['status'] == 1): ?>btn-info<?php else: ?>btn-danger<?php endif; ?>" type="button"><?php echo !empty($cat['status'])?'显示':'隐藏'; ?></button></td>
-                                        <td align="center"><?php if($cat['cat_attr'] == 1): ?>列表栏目<?php else: ?>频道栏目<?php endif; ?></td>
-                                        <td align="center"><?php echo $cat['modelname']; ?></td>
-                                        <td align="center"><input type="text" name="sort[<?php echo $cat['id']; ?>]" value="<?php echo $cat['sort']; ?>" style="width:40px;text-align:center;"></td>
-                                        <td align="center">
-                                            <a href="<?php echo url('edit',array('id'=>$cat['id'])); ?>" class="btn btn-primary btn-sm shiny">
-                                                <i class="fa fa-edit"></i> 编辑
-                                            </a>
-                                            <a href="javascript:;" onClick="warning('确实要删除吗', '<?php echo url('cate/delete',array('id'=>$cat['id'])); ?>')" class="btn btn-danger btn-sm shiny">
-                                                <i class="fa fa-trash-o"></i> 删除
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <?php endforeach; endif; else: echo "" ;endif; ?>
-                                </tbody>
-                            </table>
-                            <div class="row" style="margin-top:10px;">
-                                <div class="col-md-1 col-md-offset-8"><button type="submit" class="btn btn-default">批量删除分类</button></div>
-                            </div>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
-                   
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">网站配置</a>
+                    </li>
+                                        <li class="active">配置管理</li>
+                                        </ul>
                 </div>
-                </form>
-                
+                <!-- /Page Breadcrumb -->
 
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<button type="button" tooltip="添加配置" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url("add"); ?>'"> <i class="fa fa-plus"></i> Add
+</button>
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-body">
+                <div class="flip-scroll">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">中文名</th>
+                                <th class="text-center">英文名</th>
+                                <th class="text-center">值/默认值</th>
+                                <th class="text-center">可选值</th>
+                                <th class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <?php if(is_array($confList) || $confList instanceof \think\Collection || $confList instanceof \think\Paginator): $i = 0; $__LIST__ = $confList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?> 
+                            <tr>
+                                <td align="center"><?php echo $vo['id']; ?></td>
+                                <td align="center"><?php echo $vo['cname']; ?></td>
+                                <td align="center"><?php echo $vo['ename']; ?></td>
+                                <td align="center"><?php if($vo['value'] != ''): ?><?php echo $vo['value']; else: ?>未定义<?php endif; ?></td>
+                                <td align="center"><?php if($vo['values'] != ''): ?><?php echo $vo['values']; else: ?>未定义<?php endif; ?></td>
+                                <td align="center">
+                                    <a href="<?php echo url('edit',array('id'=>$vo['id'])); ?>" class="btn btn-primary btn-sm shiny"> <i class="fa fa-edit"></i>
+                                        编辑
+                                    </a>
+                                    <a href="#" onClick="warning('确实要删除吗', '<?php echo url('delete',array('id'=>$vo['id'])); ?>')" class="btn btn-danger btn-sm shiny"> <i class="fa fa-trash-o"></i>
+                                        删除
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        </tbody>
+                    </table>
+                    <div class="row" style="padding-top:10px;">
+                        <div class="col-md-2 col-md-offset-10">
+                        <?php echo $confList->render(); ?>
+                        </div> 
+                    </div>
+                </div>
+                <div>
+                                    </div>
             </div>
         </div>
-    
     </div>
-    <!-- /Page Body -->
 </div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
             <!-- /Page Content -->
         </div>  
     </div>
@@ -320,69 +305,7 @@
     <script src="/tnews/public/static/admin/style/jquery.js"></script>
     <!--Beyond Scripts-->
     <script src="/tnews/public/static/admin/style/beyond.js"></script>
-    <script>
-        function changestatus(o) {
-            var catid = $(o).attr('catid');
-            $.ajax({
-                url: "<?php echo url('cate/changestatus'); ?>",
-                type: 'post',
-                dataType: "json",
-                data: {catid: catid},
-                success: function(data) {
-                    if (data == '1') {
-                        $(o).attr('class','btn btn-info').text('显示');
-                    } else if (data == '2') {
-                        $(o).attr('class','btn btn-danger').text('隐藏');
-                    }
-                }
-            })
-            
-        }
+    
 
-        $('#checkall').click(function() {
-            if ($('.colored-blue').prop('checked')) {
-                $('.colored-blue').prop('checked',false);
-            } else {
-                $('.colored-blue').prop('checked',true);
-            }
-        })
 
-        $(function() {
-            $('tr[pid!="0"]').hide();
-            $('.open').click(function() {
-                var id = $(this).parent().parent().attr('id');
-                if ($(this).text() == '+') {
-                    $(this).text('-');
-                    $('tr[pid="' + id +'"]').show();
-                } else{
-                    $(this).text('+');
-                    $.ajax({
-                        url: '<?php echo url("cate/shrink"); ?>',
-                        type: 'post',
-                        dataType: 'json',
-                        data: {id: id},
-                        success: function(data) {
-                            // console.log(data);
-                            var idsobj = $('tr[pid!=0]');
-                            var cids = [];
-
-                            idsobj.each(function(k,v){
-                                // cids.push(v.id);
-                                cids.push(v.id);
-                            });
-
-                            $.each(data,function(k,v) {
-                                if ($.inArray(v, cids)) {
-                                    $('tr[id="'+ v + '"]').hide();
-                                    $('tr[id="'+ v + '"]').find('.open').text('+');
-                                }
-                            });
-                        }
-                    })
-                    
-                }
-            });
-        })
-
-    </script>
 </body></html>

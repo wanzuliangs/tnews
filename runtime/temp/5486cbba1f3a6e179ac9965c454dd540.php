@@ -1,7 +1,7 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html";i:1545485459;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1545483136;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:94:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\edit.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1545483136;}*/ ?>
 <!DOCTYPE html>
 <html><head>
-        <meta charset="utf-8">
+	    <meta charset="utf-8">
     <title>ThinkPHP5.0</title>
 
     <meta name="description" content="Dashboard">
@@ -18,13 +18,11 @@
     <link href="/tnews/public/static/admin/style/demo.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/typicons.css" rel="stylesheet">
     <link href="/tnews/public/static/admin/style/animate.css" rel="stylesheet">
-    <style>
-        .open {padding:2px 3px;border: 1px solid #999;cursor: pointer;}
-    </style>    
+    
 </head>
 <body>
-    <!-- 头部 -->
-    <!-- 头部 -->
+	<!-- 头部 -->
+            <!-- 头部 -->
     <div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
@@ -84,12 +82,12 @@
 </div>
 
     <!-- /头部 -->
-    <!-- /头部 -->
-    
-    <div class="main-container container-fluid">
-        <div class="page-container">
-                        <!-- Page Sidebar -->
-    <div class="page-sidebar" id="sidebar">
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
                     <input class="searchinput" type="text">
@@ -229,160 +227,137 @@
             </div>
             <!-- /Page Sidebar -->
             <!-- Page Content -->
-<div class="page-content">
-    <!-- Page Breadcrumb -->
-    <div class="page-breadcrumbs">
-        <ul class="breadcrumb">
-            <li>
-                <a href="#">栏目管理</a>
-            </li>
-            <li class="active">栏目列表</li>
-        </ul>
-    </div>
-    <!-- /Page Breadcrumb -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                     
+                                        <li>
+                        <a href="#">模块管理</a>
+                    </li>
+                                        <li class="active">编辑模块</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
 
-    <!-- Page Body -->
-    <div class="page-body">
-    
-        <button type="button" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href='<?php echo url('cate/add'); ?>'">
-            <i class="fa fa-plus"></i> Add
-        </button>
-        <div class="row">
-            <div class="col-lg-12 col-sm-12 col-xs-12">
-                <form action="<?php echo url('cate/sort_del'); ?>" method="post">
-                <div class="widget">
-                    <div class="widget-body">
-                        <div class="flip-scroll">
-                            <table class="table table-bordered table-hover">
-                                <thead class="">
-                                   <tr pid="0">
-                                        <th class="text-center" style="width:2%">展开</th>
-                                        <th style="width:2%;" class="text-center"><label><input id="checkall" type="checkbox"><span class="text"></span></label></th>
-                                        <th class="text-center" style="width:2%">ID</th>
-                                        <th class="text-center" style="width:8%">栏目</th>
-                                        <th class="text-center" style="width:2%">状态</th>
-                                        <th class="text-center" style="width:6%">属性</th>
-                                        <th class="text-center" style="width:4%">所属模型</th>
-                                        <th class="text-center" style="width:4%">排序</th>
-                                        <th style="width:4%" class="text-center">操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php if(is_array($catlist) || $catlist instanceof \think\Collection || $catlist instanceof \think\Paginator): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cat): $mod = ($i % 2 );++$i;?>
-                                    <tr id="<?php echo $cat['id']; ?>" pid="<?php echo $cat['pid']; ?>">
-                                        <td align="center"><span  class="open">+</span></td>
-                                        <td align="center"><label><input name="item[]"  class="colored-blue" type="checkbox" value="<?php echo $cat['id']; ?>"><span class="text"></span></label></td>
-                                        <td align="center"><?php echo $cat['id']; ?></td>
-                                        <td align="left"><?php echo str_repeat('-', $cat['lev']*8) ?><a href="javascript:;"><?php echo $cat['cate_name']; ?></a><button type="button" style="float:right;" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon" onclick="javascript:window.location.href='<?php echo url('add',array('id'=>$cat['id'])); ?>'">
-             添加栏目
-        </button></td>
-                                        <td align="center"><button catid="<?php echo $cat['id']; ?>" onclick="changestatus(this);" class="btn <?php if($cat['status'] == 1): ?>btn-info<?php else: ?>btn-danger<?php endif; ?>" type="button"><?php echo !empty($cat['status'])?'显示':'隐藏'; ?></button></td>
-                                        <td align="center"><?php if($cat['cat_attr'] == 1): ?>列表栏目<?php else: ?>频道栏目<?php endif; ?></td>
-                                        <td align="center"><?php echo $cat['modelname']; ?></td>
-                                        <td align="center"><input type="text" name="sort[<?php echo $cat['id']; ?>]" value="<?php echo $cat['sort']; ?>" style="width:40px;text-align:center;"></td>
-                                        <td align="center">
-                                            <a href="<?php echo url('edit',array('id'=>$cat['id'])); ?>" class="btn btn-primary btn-sm shiny">
-                                                <i class="fa fa-edit"></i> 编辑
-                                            </a>
-                                            <a href="javascript:;" onClick="warning('确实要删除吗', '<?php echo url('cate/delete',array('id'=>$cat['id'])); ?>')" class="btn btn-danger btn-sm shiny">
-                                                <i class="fa fa-trash-o"></i> 删除
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <?php endforeach; endif; else: echo "" ;endif; ?>
-                                </tbody>
-                            </table>
-                            <div class="row" style="margin-top:10px;">
-                                <div class="col-md-1 col-md-offset-8"><button type="submit" class="btn btn-default">批量删除分类</button></div>
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">编辑模块</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post">
+                        <input type="hidden" name="id" value="<?php echo !empty($modelInfo['id'])?$modelInfo['id']:''; ?>">
+                        <input type="hidden" id="oldtablename" name="oldtablename" value="<?php echo !empty($modelInfo['tablename'])?$modelInfo['tablename']:''; ?>">
+                        <div class="form-group">
+                            <label for="modelname" class="col-sm-2 control-label no-padding-right">模块名称</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="modelname" placeholder="" name="modelname" required="" type="text" value="<?php echo !empty($modelInfo['modelname'])?$modelInfo['modelname']:''; ?>">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tablename" class="col-sm-2 control-label no-padding-right">附加表名</label>
+                            <div class="col-sm-6">
+                               <input class="form-control" id="tablename" placeholder="" name="tablename" required="" type="text" value="<?php echo !empty($modelInfo['tablename'])?$modelInfo['tablename']:''; ?>">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>  
+                        <div class="form-group">
+                            <label for="status" class="col-sm-2 control-label no-padding-right">是否显示</label>
+                            <div class="col-sm-6">
+                               <div class="row">
+                                   <div class="radio col-md-2">
+                                       <label>
+                                           <input <?php if($modelInfo['status'] == 1): ?>checked="checked"<?php endif; ?> class="colored-blue" name="status" type="radio" value="1">                               
+                                           <span class="text">显示</span>
+                                       </label>
+                                   </div>
+                                   <div class="radio col-md-2">
+                                       <label>
+                                           <input class="colored-blue" name="status" type="radio" value="0" <?php if($modelInfo['status'] == 0): ?>checked="checked"<?php endif; ?>>                               
+                                           <span class="text">隐藏</span>
+                                       </label>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>  
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input onclick="addModel()" type="button" class="btn btn-default" value="保存信息">
                             </div>
                         </div>
-                        <div>
-                        </div>
-                    </div>
-                   
+                    </form>
                 </div>
-                </form>
-                
-
             </div>
         </div>
-    
     </div>
-    <!-- /Page Body -->
 </div>
-            <!-- /Page Content -->
-        </div>  
-    </div>
 
-        <!--Basic Scripts-->
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+	    <!--Basic Scripts-->
     <script src="/tnews/public/static/admin/style/jquery_002.js"></script>
+    <script src="/tnews/public/static/admin/plus/layer/layer.js"></script>
     <script src="/tnews/public/static/admin/style/bootstrap.js"></script>
-    <script src="/tnews/public/static/admin/style/jquery.js"></script>
     <!--Beyond Scripts-->
     <script src="/tnews/public/static/admin/style/beyond.js"></script>
-    <script>
-        function changestatus(o) {
-            var catid = $(o).attr('catid');
-            $.ajax({
-                url: "<?php echo url('cate/changestatus'); ?>",
-                type: 'post',
-                dataType: "json",
-                data: {catid: catid},
-                success: function(data) {
-                    if (data == '1') {
-                        $(o).attr('class','btn btn-info').text('显示');
-                    } else if (data == '2') {
-                        $(o).attr('class','btn btn-danger').text('隐藏');
-                    }
-                }
-            })
-            
+    
+</body>
+<script>
+    function addModel()
+    {
+        var modelname = $.trim($('#modelname').val());
+        if (modelname == '') {
+            layer.open({
+              content: '模块名不能为空!',
+              time: 2000,
+              yes: function(index, layero){
+                layer.close(index);
+              }
+            });        
+            return;
         }
 
-        $('#checkall').click(function() {
-            if ($('.colored-blue').prop('checked')) {
-                $('.colored-blue').prop('checked',false);
-            } else {
-                $('.colored-blue').prop('checked',true);
+        var tablename = $.trim($('#tablename').val());
+        if (tablename == '') {
+            layer.open({
+              content: '附加表名不能为空!',
+              time: 2000,
+              yes: function(index, layero){
+                layer.close(index);
+              }
+            });        
+            return;
+        }
+
+        var status = $('input:radio[name="status"]:checked').val();
+
+        var id = $('input[type="hidden"]').val();
+        var oldtablename = $('#oldtablename').val();
+        $.post('<?php echo url("model/edit"); ?>', {'modelname':modelname, 'tablename': tablename, 'status': status, 'id': id, 'oldtablename': oldtablename}, function(res) {
+            layer.open({
+              title: '提示'
+              ,content: res.msg
+            });     
+
+            if (res.code == 0) {
+                setTimeout(function(){
+                    window.location.reload();
+                }, 800)
             }
-        })
+        },'json');
 
-        $(function() {
-            $('tr[pid!="0"]').hide();
-            $('.open').click(function() {
-                var id = $(this).parent().parent().attr('id');
-                if ($(this).text() == '+') {
-                    $(this).text('-');
-                    $('tr[pid="' + id +'"]').show();
-                } else{
-                    $(this).text('+');
-                    $.ajax({
-                        url: '<?php echo url("cate/shrink"); ?>',
-                        type: 'post',
-                        dataType: 'json',
-                        data: {id: id},
-                        success: function(data) {
-                            // console.log(data);
-                            var idsobj = $('tr[pid!=0]');
-                            var cids = [];
-
-                            idsobj.each(function(k,v){
-                                // cids.push(v.id);
-                                cids.push(v.id);
-                            });
-
-                            $.each(data,function(k,v) {
-                                if ($.inArray(v, cids)) {
-                                    $('tr[id="'+ v + '"]').hide();
-                                    $('tr[id="'+ v + '"]').find('.open').text('+');
-                                }
-                            });
-                        }
-                    })
-                    
-                }
-            });
-        })
-
-    </script>
-</body></html>
+    }
+</script>
+</html>
