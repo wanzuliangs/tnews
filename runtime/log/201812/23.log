@@ -1,0 +1,2840 @@
+---------------------------------------------------------------
+[ 2018-12-23T19:58:40+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/add
+[运行时间：0.048002s] [吞吐率：20.83req/s] [内存消耗：1,360.75kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T19:58:48+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model/add.html
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,357.12kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/add',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Model->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Model.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T19:58:50+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model/index.html
+[运行时间：0.157009s] [吞吐率：6.37req/s] [内存消耗：2,097.55kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Model->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Model.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\index.html [ array (
+  0 => 'contrname',
+  1 => 'model_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.064003s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` ORDER BY `id` DESC [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-12-23T19:58:57+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model/edit/id/24.html
+[运行时间：0.092006s] [吞吐率：10.87req/s] [内存消耗：2,114.73kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '24',
+)
+[ info ] [ RUN ] app\admin\controller\Model->edit[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Model.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\edit.html [ array (
+  0 => 'contrname',
+  1 => 'modelInfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T19:59:02+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model/edit/id/24.html
+[运行时间：0.062003s] [吞吐率：16.13req/s] [内存消耗：2,114.73kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '24',
+)
+[ info ] [ RUN ] app\admin\controller\Model->edit[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Model.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\edit.html [ array (
+  0 => 'contrname',
+  1 => 'modelInfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T19:59:05+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/config/configlst.html
+[运行时间：0.062004s] [吞吐率：16.13req/s] [内存消耗：2,133.34kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'configlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Config->configlst[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Config.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\config\configlst.html [ array (
+  0 => 'contrname',
+  1 => 'confList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_conf` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_conf` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T19:59:15+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/cate/index.html
+[运行时间：0.128007s] [吞吐率：7.81req/s] [内存消耗：2,491.58kb] [文件加载：45]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+  1 => 'catlist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_cat` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_cat` ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T21:02:39+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/cate/index.html
+[运行时间：0.194011s] [吞吐率：5.15req/s] [内存消耗：2,667.88kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/config/configlst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+  1 => 'catlist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_cat` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_cat` ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T21:02:44+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/cate/shrink.html
+[运行时间：0.074004s] [吞吐率：13.51req/s] [内存消耗：2,356.10kb] [文件加载：42]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'shrink',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/cate/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'sidebar',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->shrink[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_cat` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid` FROM `t_cat` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T21:02:50+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,468.91kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:03:38+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/
+[运行时间：0.042003s] [吞吐率：23.81req/s] [内存消耗：1,469.16kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:03:41+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_field/index.html
+[运行时间：0.083005s] [吞吐率：12.05req/s] [内存消耗：1,018.71kb] [文件加载：29]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_field',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:03:50+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_field/add.html
+[运行时间：0.046002s] [吞吐率：21.74req/s] [内存消耗：1,018.65kb] [文件加载：29]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_field',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:03:54+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_field/index.html
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：1,018.71kb] [文件加载：29]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_field',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:03:58+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_field/add.html
+[运行时间：0.040002s] [吞吐率：25.00req/s] [内存消耗：1,018.65kb] [文件加载：29]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_field',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:04:57+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,469.16kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:06:19+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/
+[运行时间：0.044003s] [吞吐率：22.73req/s] [内存消耗：1,469.16kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:11:21+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,469.20kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:11:23+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.060003s] [吞吐率：16.67req/s] [内存消耗：1,300.26kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-12-23T21:11:27+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,300.56kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-12-23T21:11:34+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,249.66kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:11:34+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.031001s] [吞吐率：32.26req/s] [内存消耗：1,249.91kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:11:38+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.032002s] [吞吐率：31.25req/s] [内存消耗：1,249.91kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:11:44+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,300.26kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-12-23T21:11:52+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,249.66kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:13:03+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,323.38kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\index\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:13:05+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.045002s] [吞吐率：22.22req/s] [内存消耗：1,300.26kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-12-23T21:13:12+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.036003s] [吞吐率：27.78req/s] [内存消耗：1,300.56kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-12-23T21:13:23+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/cate/index.html
+[运行时间：0.135008s] [吞吐率：7.41req/s] [内存消耗：2,667.47kb] [文件加载：47]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cate->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\cate\index.html [ array (
+  0 => 'contrname',
+  1 => 'catlist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_cat` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_cat` ORDER BY `sort` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T21:13:26+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/cate/shrink.html
+[运行时间：0.084005s] [吞吐率：11.90req/s] [内存消耗：2,356.10kb] [文件加载：42]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'shrink',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/cate/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'sidebar',
+)
+[ info ] [ RUN ] app\admin\controller\Cate->shrink[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_cat` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid` FROM `t_cat` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T21:13:27+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model/index.html
+[运行时间：0.192011s] [吞吐率：5.21req/s] [内存消耗：2,265.52kb] [文件加载：45]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/cate/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Model->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Model.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\index.html [ array (
+  0 => 'contrname',
+  1 => 'model_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` ORDER BY `id` DESC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T21:13:30+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.048003s] [吞吐率：20.83req/s] [内存消耗：1,300.28kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-12-23T21:18:01+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model/index.html
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：2,113.73kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/cate/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Model->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\Model.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\index.html [ array (
+  0 => 'contrname',
+  1 => 'model_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` ORDER BY `id` DESC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T21:18:02+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.046003s] [吞吐率：21.74req/s] [内存消耗：1,394.88kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:18:05+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.033002s] [吞吐率：30.30req/s] [内存消耗：1,249.69kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:18:07+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.030002s] [吞吐率：33.33req/s] [内存消耗：1,250.03kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:18:08+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.030002s] [吞吐率：33.33req/s] [内存消耗：1,250.03kb] [文件加载：33]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:18:28+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,395.34kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:24:41+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.040002s] [吞吐率：25.00req/s] [内存消耗：1,416.38kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:25:59+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,416.49kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:26:56+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,320.11kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-12-23T21:26:57+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.043003s] [吞吐率：23.25req/s] [内存消耗：1,320.11kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-12-23T21:26:59+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,320.11kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:[C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-12-23T21:27:24+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,413.95kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:28:03+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,474.70kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:53:17+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.041002s] [吞吐率：24.39req/s] [内存消耗：1,419.14kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:53:52+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,416.46kb] [文件加载：37]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:54:29+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.048003s] [吞吐率：20.83req/s] [内存消耗：1,493.23kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:55:01+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.041002s] [吞吐率：24.39req/s] [内存消耗：1,324.41kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:56:49+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.047002s] [吞吐率：21.28req/s] [内存消耗：1,475.51kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:56:52+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,495.66kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:56:54+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,324.41kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:57:48+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.042003s] [吞吐率：23.81req/s] [内存消耗：1,472.92kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:58:27+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.043003s] [吞吐率：23.25req/s] [内存消耗：1,472.73kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:58:35+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.044002s] [吞吐率：22.73req/s] [内存消耗：1,472.73kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T21:59:36+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.042002s] [吞吐率：23.81req/s] [内存消耗：1,324.40kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T22:37:36+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,477.62kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T22:38:22+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.045002s] [吞吐率：22.22req/s] [内存消耗：1,477.56kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T22:38:36+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.042003s] [吞吐率：23.81req/s] [内存消耗：1,477.56kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T22:47:03+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.048002s] [吞吐率：20.83req/s] [内存消耗：1,477.43kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T22:52:10+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.046002s] [吞吐率：21.74req/s] [内存消耗：1,477.80kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T22:52:13+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,324.40kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T22:56:13+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,934.13kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T22:58:15+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.068004s] [吞吐率：14.70req/s] [内存消耗：2,235.47kb] [文件加载：45]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T22:58:21+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.057003s] [吞吐率：17.54req/s] [内存消耗：2,081.52kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:04:16+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.064004s] [吞吐率：15.62req/s] [内存消耗：2,082.70kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:04:29+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：1,282.73kb] [文件加载：34]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'field_cname' => '11',
+  'field_ename' => '22',
+  'field_type' => '4',
+  'field_value' => '44',
+  'model_id' => '24',
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T23:04:33+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,082.60kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:10:14+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：2,083.53kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:10:31+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.086005s] [吞吐率：11.63req/s] [内存消耗：2,078.89kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '96',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'field_cname' => '导演名',
+  'field_ename' => 'daoyan',
+  'field_type' => '1',
+  'field_value' => '',
+  'model_id' => '24',
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'contrname',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model_fields` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] INSERT INTO `t_model_fields` (`field_cname` , `field_ename` , `field_type` , `field_value` , `model_id`) VALUES ('导演名' , 'daoyan' , 1 , 0 , 24) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:10:33+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,480.23kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T23:11:18+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,327.61kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T23:11:20+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.066004s] [吞吐率：15.15req/s] [内存消耗：2,083.89kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:11:26+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.074004s] [吞吐率：13.51req/s] [内存消耗：2,078.76kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'field_cname' => '11',
+  'field_ename' => '22',
+  'field_type' => '1',
+  'field_value' => '33',
+  'model_id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'contrname',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model_fields` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] INSERT INTO `t_model_fields` (`field_cname` , `field_ename` , `field_type` , `field_value` , `model_id`) VALUES ('11' , '22' , 1 , 33 , 23) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:11:27+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：1,327.58kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T23:11:46+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/index.html
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,327.58kb] [文件加载：36]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->index[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\index.html [ array (
+  0 => 'contrname',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-23T23:18:16+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.064004s] [吞吐率：15.62req/s] [内存消耗：2,084.04kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:19:03+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.057003s] [吞吐率：17.54req/s] [内存消耗：1,940.77kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'field_cname' => '11',
+  'field_ename' => '22',
+  'field_type' => '1',
+  'field_value' => '33',
+  'model_id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:20:03+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,940.91kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'field_cname' => '11',
+  'field_ename' => '22',
+  'field_type' => '1',
+  'field_value' => '33',
+  'model_id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:20:05+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：2,085.19kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:20:10+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：1,940.91kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'field_cname' => '11',
+  'field_ename' => '22',
+  'field_type' => '2',
+  'field_value' => '33',
+  'model_id' => '24',
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:20:13+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：2,085.19kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:20:16+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.068004s] [吞吐率：14.70req/s] [内存消耗：1,940.91kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'field_cname' => '11',
+  'field_ename' => '22',
+  'field_type' => '2',
+  'field_value' => '33',
+  'model_id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:20:18+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.059004s] [吞吐率：16.95req/s] [内存消耗：2,085.19kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:24:47+08:00 ] 127.0.0.1 POST 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：1,941.40kb] [文件加载：38]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'field_cname' => '11',
+  'field_ename' => '22',
+  'field_type' => '2',
+  'field_value' => '33',
+  'model_id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-12-23T23:24:49+08:00 ] 127.0.0.1 GET 127.0.0.1/tnews/public/index.php/admin/model_fields/add.html
+[运行时间：0.066004s] [吞吐率：15.15req/s] [内存消耗：2,085.45kb] [文件加载：43]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\work\WWW\tnews\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/tnews/public/index.php/admin/model_fields/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\controller\ModelFields.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model_fields\add.html [ array (
+  0 => 'contrname',
+  1 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tnews;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `t_model` [ RunTime:0.000000s ]

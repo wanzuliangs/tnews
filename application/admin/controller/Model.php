@@ -17,6 +17,10 @@ class Model extends Common
 			$data['modelname'] = trim(input('post.modelname'));
 			$data['tablename'] = trim(input('post.tablename'));
 			$data['status'] = trim(input('post.status'));
+			// $validate = validate('Model');
+			// if ($validate->check($data)) {
+			// 	exit(json_encode(array('code'=>1, 'msg'=>$validate->getError())));
+			// }
 			$res = db('model')->insert($data);
 			$sql = "CREATE TABLE `" . config('database.prefix') . "{$data['tablename']}` (";
 			$sql .= "`id` int(10) unsigned NOT NULL AUTO_INCREMENT,";

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:95:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\index.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1545483136;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:95:"C:\Users\Administrator\Desktop\work\WWW\tnews\public/../application/admin\view\model\index.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\head.html";i:1545483136;s:85:"C:\Users\Administrator\Desktop\work\WWW\tnews\application\admin\view\common\left.html";i:1545570572;}*/ ?>
 
 <!DOCTYPE html>
 <html><head>
@@ -122,6 +122,7 @@
                             </li>
                         </ul>                            
                     </li>
+                   
                     <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-user"></i>
@@ -203,6 +204,30 @@
                             </li>
                         </ul>                            
                     </li> 
+
+                    <li <?php if($contrname == 'ModelField'): ?>class="open"<?php endif; ?>>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-pagelines"></i>
+                            <span class="menu-text">模型字段配置</span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="<?php echo url('ModelFields/index'); ?>">
+                                    <span class="menu-text">
+                                            模型字段管理                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="<?php echo url('ModelFields/add'); ?>">
+                                    <span class="menu-text">
+                                            模型字段添加                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            </li>
+                        </ul>                            
+                    </li>
 
                     <li>
                         <a href="#" class="menu-dropdown">
